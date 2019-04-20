@@ -1,6 +1,6 @@
 Describe "Network" {
 
-    Context "Enable NSG Flow Logs" {
+    Context "NSG Flow Logs should be enabled" {
     
         $watcheres = Get-AzNetworkWatcher
         $nsgs = Get-AzNetworkSecurityGroup
@@ -14,6 +14,28 @@ Describe "Network" {
 
             it "$nsgName"{
                 $flowLogStatus.Enabled | Should -BeTrue
+            }
+        }
+    }
+
+    Context "Nic should be used" {
+        $nics = Get-AzNetworkInterface
+
+        $nics | ForEach-Object {
+            $nic = $_
+            it "$($nic.Name)" {
+                $nic.VirtualMachine | Should -Not -Be $null
+            }
+        }
+    }
+
+    Context "Public ip address should be used" {
+        $pips = Get-AzPublicIpAddress
+
+        $pips | ForEach-Object {
+            $pip = $_
+            it "$($pip.Name)" {
+                $pip.IpConfiguration | Should -Not -Be $null
             }
         }
     }

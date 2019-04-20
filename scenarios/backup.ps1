@@ -2,7 +2,7 @@ $ErrorActionPreference = "stop"
 
 Describe "Backup" {
 
-    Context "Enable VM backup" {
+    Context "VM backup should be enabled" {
     
         $backupedVms = New-Object System.Collections.ArrayList
 
@@ -24,7 +24,7 @@ Describe "Backup" {
         }
     }
 
-    Context "Latest backup is within 24 hours" {
+    Context "Latest backup should be within 24 hours" {
     
         $backupedItems = New-Object System.Collections.ArrayList
 
@@ -50,6 +50,35 @@ Describe "Backup" {
                 }
                 it "$($vm.Name)" {
                     $protectVmDaily | Should -BeTrue
+                }
+            }
+        }
+    }
+
+    Context "The notification for VM backup should be configured" {
+
+        $azContext = Get-AzContext
+        $azProfile = [Microsoft.Azure.Commands.Common.Authentication.Abstractions.AzureRmProfileProvider]::Instance.Profile
+        $profileClient = New-Object Microsoft.Azure.Commands.ResourceManager.Common.RMProfileClient($azProfile)
+        $token = $profileClient.AcquireAccessToken($azContext.Tenant.TenantId)
+        $token.AccessToken
+
+        $authHeader = "Bearer " + $token.AccessToken
+        $requestHeader = @{
+            "Authorization" = $authHeader
+            "Accept" = "application/json"
+        }
+
+        $vaults = Get-AzRecoveryServicesVault
+        $vaults | ForEach-Object {
+            $container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $_.ID -Status Registered
+            if ( $container ) {
+                $res = Invoke-RestMethod -Method GET -Uri "https://management.azure.com$($_.ID)/monitoringConfigurations/notificationConfiguration?api-version=2017-07-01-preview" -Headers $requestHeader -ContentType "application/json;charset=utf-8"
+
+                it "$($_.Name)" {
+                    $res.properties.areNotificationsEnabled -eq $true -and `
+                    $res.properties.hasValidEmailAddresses -eq $true -and `
+                    $res.properties.severitiesToNotifyFor.Contains(1) | Should -BeTrue
                 }
             }
         }

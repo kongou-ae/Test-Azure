@@ -1,3 +1,9 @@
+param (
+    [switch]$network,
+    [switch]$backup,
+    [switch]$disk
+)
+
 $ErrorActionPreference = "stop"
 
 function Write-ColorOutput {
@@ -25,12 +31,51 @@ function showResult {
     }
 }
 
-Write-ColorOutput "Test Backup" "Green"
-$result = Invoke-Pester .\scenarios\backup.ps1 -PassThru -Show None 
-showResult $result "Enable VM backup"
-showResult $result "Latest backup is within 24 hours"
+$resultList = New-Object System.Collections.ArrayList
 
-Write-ColorOutput "Test Network" "Green"
-$result = Invoke-Pester .\scenarios\network.ps1  -PassThru -Show None
-showResult $result "Enable NSG Flow Logs"
+if ( `
+    $network.IsPresent -eq $false -and `
+    $disk.IsPresent -eq $false -and `
+    $backup.IsPresent -eq $false
+) {
+    $network = $true
+    $disk = $true
+    $backup = $true
+}
 
+if ( $backup ){
+    Write-ColorOutput "Test Backup" "Green"
+    $result = Invoke-Pester .\scenarios\backup.ps1 -PassThru -Show None
+    $result.TestResult | ForEach-Object {
+        $resultList.Add($_) | Out-Null
+    }
+    showResult $result "VM backup should be enabled"
+    showResult $result "Latest backup should be within 24 hours"
+    showResult $result "The notification for VM backup should be configured"
+}
+
+if ( $network ){
+    Write-ColorOutput "Test Network" "Green"
+    $result = Invoke-Pester .\scenarios\network.ps1 -PassThru -Show None
+    $result.TestResult | ForEach-Object {
+        $resultList.Add($_) | Out-Null
+    }
+    showResult $result "NSG Flow Logs should be enabled"
+    showResult $result "Nic should be used"
+    showResult $result "Public ip address should be used"
+}
+
+
+if ( $disk ){
+    Write-ColorOutput "Test Disk" "Green"
+    $result = Invoke-Pester .\scenarios\disk.ps1 -PassThru -Show None
+    $result.TestResult | ForEach-Object {
+        $resultList.Add($_) | Out-Null
+    }
+    showResult $result "Disk should be used"    
+}
+
+$total = $resultList.Count
+$pass = ($resultList | Where-Object {$_.Result -eq "Passed"}).Count
+$fail = ($resultList | Where-Object {$_.Result -eq "Failed"}).Count
+Write-Output "Total:$total, Pass:$pass, Fail:$fail"
