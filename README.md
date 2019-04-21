@@ -24,6 +24,7 @@ PowerShell script to validate Azure environment.
 - NSG Flow Logs should be enabled
 - Unused nic should be deleted
 - Unused public ip address should be deleted
+- Runninng VM should be protected by NSG
 
 ### Disk 
 
