@@ -63,7 +63,9 @@ if ( $network ){
     showResult $result "NSG Flow Logs should be enabled"
     showResult $result "Nic should be used"
     showResult $result "Public ip address should be used"
+    showResult $result "Runninng VM should be protected by NSG"
 }
+
 
 
 if ( $disk ){
