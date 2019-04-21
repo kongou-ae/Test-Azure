@@ -51,7 +51,7 @@ if ( $backup ){
     }
     showResult $result "VM backup should be enabled"
     showResult $result "Latest backup should be within 24 hours"
-    showResult $result "The notification for VM backup should be configured"
+    showResult $result "Backup alert for VM backup should be configured"
 }
 
 if ( $network ){

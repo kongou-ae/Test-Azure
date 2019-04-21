@@ -55,7 +55,7 @@ Describe "Backup" {
         }
     }
 
-    Context "The notification for VM backup should be configured" {
+    Context "Backup alert for VM backup should be configured" {
 
         $azContext = Get-AzContext
         $azProfile = [Microsoft.Azure.Commands.Common.Authentication.Abstractions.AzureRmProfileProvider]::Instance.Profile
