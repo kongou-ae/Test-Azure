@@ -2,7 +2,7 @@
 
 PowerShell script to validate Azure environment.
 
-![](https://user-images.githubusercontent.com/3410186/56469912-b65f5700-647a-11e9-9681-99461e4f69d0.PNG)
+<img src="https://user-images.githubusercontent.com/3410186/56469912-b65f5700-647a-11e9-9681-99461e4f69d0.PNG" width="400px">
 
 ## Usage 
 
