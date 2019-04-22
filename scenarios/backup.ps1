@@ -93,7 +93,7 @@ Describe "Backup" {
 
                 $vault = Get-AzResource -ResourceId $_.ID -ExpandProperties
 
-                if ($vault.Tags["TestAzure"] -eq "skip") {
+                if ($vault.Tags -ne $null -and $vault.Tags["TestAzure"] -eq "skip") {
                     it "$($_.Name)" -Skip {
                         $res.properties.areNotificationsEnabled -eq $true -and `
                         $res.properties.hasValidEmailAddresses -eq $true -and `
