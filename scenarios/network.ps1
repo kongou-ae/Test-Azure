@@ -12,8 +12,14 @@ Describe "Network" {
             $_.Id -match "networkSecurityGroups/(.*)?" | Out-Null
             $nsgName = $Matches[1]
 
-            it "$nsgName"{
-                $flowLogStatus.Enabled | Should -BeTrue
+            if ($nsg.Tag -ne $null -and $nsg.Tag["TestAzure"] -eq "skip") {
+                it "$nsgName" -Skip {
+                    $flowLogStatus.Enabled | Should -BeTrue
+                }
+            } else {
+                it "$nsgName" {
+                    $flowLogStatus.Enabled | Should -BeTrue
+                }
             }
         }
     }
@@ -23,8 +29,15 @@ Describe "Network" {
 
         $nics | ForEach-Object {
             $nic = $_
-            it "$($nic.Name)" {
-                $nic.VirtualMachine | Should -Not -Be $null
+
+            if ($nic.Tag -ne $null -and $nic.Tag["TestAzure"] -eq "skip") {
+                it "$($nic.Name)" -Skip {
+                    $nic.VirtualMachine | Should -Not -Be $null
+                }
+            } else {
+                it "$($nic.Name)" {
+                    $nic.VirtualMachine | Should -Not -Be $null
+                }                
             }
         }
     }
@@ -34,8 +47,15 @@ Describe "Network" {
 
         $pips | ForEach-Object {
             $pip = $_
-            it "$($pip.Name)" {
-                $pip.IpConfiguration | Should -Not -Be $null
+
+            if ($pip.Tag -ne $null -and $pip.Tag["TestAzure"] -eq "skip") {
+                it "$($pip.Name)" -Skip {
+                    $pip.IpConfiguration | Should -Not -Be $null
+                }
+            } else {
+                it "$($pip.Name)" {
+                    $pip.IpConfiguration | Should -Not -Be $null
+                }
             }
         }
     }
@@ -49,9 +69,15 @@ Describe "Network" {
             if ( $vm.Statuses[1].Code -eq "PowerState/running" ){
                 # A warning message raised if vm is not running
                 $EffectiveNetworkSecurityGroup = Get-AzEffectiveNetworkSecurityGroup -NetworkInterfaceName $usedNic.Name -ResourceGroupName $usedNic.ResourceGroupName -WarningAction 'SilentlyContinue'
-                it "$($usedNic.Name)" {
-                    $EffectiveNetworkSecurityGroup | Should -Not -Be $null
-                }       
+                if ($usedNic.Tag -ne $null -and $usedNic.Tag["TestAzure"] -eq "skip") {
+                    it "$($usedNic.Name)" -Skip {
+                        $EffectiveNetworkSecurityGroup | Should -Not -Be $null
+                    }
+                } else {
+                    it "$($usedNic.Name)" {
+                        $EffectiveNetworkSecurityGroup | Should -Not -Be $null
+                    }                    
+                }
             }
         }
     }

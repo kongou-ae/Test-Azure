@@ -28,6 +28,7 @@ function showResult {
     $result.TestResult | Where-Object { $_.Context -eq "$context" } | ForEach-Object {
         if ($_.Result -eq "Passed" ){ Write-ColorOutput "    PASS $($_.Name)" "Green" } 
         if ($_.Result -eq "Failed" ){ Write-ColorOutput "    FAIL $($_.Name)" "Red" }
+        if ($_.Result -eq "Skipped" ){ Write-ColorOutput "    SKIP $($_.Name)" "Yellow" }
     }
 }
 
@@ -80,4 +81,5 @@ if ( $disk ){
 $total = $resultList.Count
 $pass = ($resultList | Where-Object {$_.Result -eq "Passed"}).Count
 $fail = ($resultList | Where-Object {$_.Result -eq "Failed"}).Count
-Write-Output "Total:$total, Pass:$pass, Fail:$fail"
+$skip = ($resultList | Where-Object {$_.Result -eq "Skipped"}).Count
+Write-Output "Total:$total, Passed:$pass, Failed:$fail, Skipped:$skip"

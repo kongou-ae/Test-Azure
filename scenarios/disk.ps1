@@ -11,11 +11,19 @@ Describe "Disk" {
                     $asrDisk = $true
                 }
             }
-            it "$($disk.Name)" {
-                # Diskが誰かにマウントされている
-                $disk.ManagedBy -ne $null -or `
-                # または、ASRのタグがついてる　のいずれかがTrue
-                $asrDisk -eq $true | Should -BeTrue
+
+            if ($disk.Tags["TestAzure"] -eq "skip") {
+                it "$($disk.Name)" -Skip {
+                    # Diskが誰かにマウントされている
+                    $disk.ManagedBy -ne $null -or `
+                    # または、ASRのタグがついてる　のいずれかがTrue
+                    $asrDisk -eq $true | Should -BeTrue
+                }
+            } else {
+                it "$($disk.Name)"{
+                    $disk.ManagedBy -ne $null -or `
+                    $asrDisk -eq $true | Should -BeTrue
+                }
             }
         }
     }

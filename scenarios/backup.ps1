@@ -18,8 +18,15 @@ Describe "Backup" {
        
         $vms | ForEach-Object {
             $vm = $_
-            it "$($vm.Name)"{
-                $backupedVms | Where-Object { $_.FriendlyName -eq $vm.Name -and $_.ResourceGroupName -eq $vm.ResourceGroupName } | Should -BeTrue
+
+            if ($vm.Tags["TestAzure"] -eq "skip") {            
+                it "$($vm.Name)" -Skip {
+                    $backupedVms | Where-Object { $_.FriendlyName -eq $vm.Name -and $_.ResourceGroupName -eq $vm.ResourceGroupName } | Should -BeTrue
+                }
+            } else {
+                it "$($vm.Name)" {
+                    $backupedVms | Where-Object { $_.FriendlyName -eq $vm.Name -and $_.ResourceGroupName -eq $vm.ResourceGroupName } | Should -BeTrue
+                }
             }
         }
     }
@@ -32,9 +39,12 @@ Describe "Backup" {
         $vms = Get-azvm
 
         $vaults | ForEach-Object {
-            $container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $_.ID -Status Registered
-            if ($container){
-                $backupedItems.Add((Get-AzRecoveryServicesBackupItem -VaultId $_.ID -Container $container -WorkloadType AzureVM))
+            $vault = $_
+            $containers = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $vault.ID -Status Registered
+            if ($containers){
+                $containers | ForEach-Object {
+                    $backupedItems.Add((Get-AzRecoveryServicesBackupItem -VaultId $vault.ID -Container $_ -WorkloadType AzureVM))
+                }
             }
         }
 
@@ -48,8 +58,15 @@ Describe "Backup" {
                         $protectVmDaily = $true
                     }
                 }
-                it "$($vm.Name)" {
-                    $protectVmDaily | Should -BeTrue
+
+                if ($vm.Tags["TestAzure"] -eq "skip") {
+                    it "$($vm.Name)" -Skip {
+                        $protectVmDaily | Should -BeTrue
+                    }
+                } else {
+                    it "$($vm.Name)" {
+                        $protectVmDaily | Should -BeTrue
+                    }                    
                 }
             }
         }
@@ -61,7 +78,6 @@ Describe "Backup" {
         $azProfile = [Microsoft.Azure.Commands.Common.Authentication.Abstractions.AzureRmProfileProvider]::Instance.Profile
         $profileClient = New-Object Microsoft.Azure.Commands.ResourceManager.Common.RMProfileClient($azProfile)
         $token = $profileClient.AcquireAccessToken($azContext.Tenant.TenantId)
-        $token.AccessToken
 
         $authHeader = "Bearer " + $token.AccessToken
         $requestHeader = @{
@@ -75,10 +91,20 @@ Describe "Backup" {
             if ( $container ) {
                 $res = Invoke-RestMethod -Method GET -Uri "https://management.azure.com$($_.ID)/monitoringConfigurations/notificationConfiguration?api-version=2017-07-01-preview" -Headers $requestHeader -ContentType "application/json;charset=utf-8"
 
-                it "$($_.Name)" {
-                    $res.properties.areNotificationsEnabled -eq $true -and `
-                    $res.properties.hasValidEmailAddresses -eq $true -and `
-                    $res.properties.severitiesToNotifyFor.Contains(1) | Should -BeTrue
+                $vault = Get-AzResource -ResourceId $_.ID -ExpandProperties
+
+                if ($vault.Tags["TestAzure"] -eq "skip") {
+                    it "$($_.Name)" -Skip {
+                        $res.properties.areNotificationsEnabled -eq $true -and `
+                        $res.properties.hasValidEmailAddresses -eq $true -and `
+                        $res.properties.severitiesToNotifyFor -Contains(1) | Should -BeTrue
+                    }
+                } else {
+                    it "$($_.Name)" {
+                        $res.properties.areNotificationsEnabled -eq $true -and `
+                        $res.properties.hasValidEmailAddresses -eq $true -and `
+                        $res.properties.severitiesToNotifyFor -Contains(1) | Should -BeTrue
+                    }                    
                 }
             }
         }
