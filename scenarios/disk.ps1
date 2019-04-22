@@ -27,4 +27,22 @@ Describe "Disk" {
             }
         }
     }
+
+    Context "Disk should be more than Standard HDD" {
+        $disks = Get-AzDisk
+
+        $disks | ForEach-Object {
+            $disk = $_
+ 
+            if ($disk.Tags["TestAzure"] -eq "skip") {
+                it "$($disk.Name)" -Skip {
+                    $disk.Sku.Name | Should -Not -Be "Standard_LRS"
+                }
+            } else {
+                it "$($disk.Name)"{
+                    $disk.Sku.Name | Should -Not -Be "Standard_LRS"
+                }
+            }
+        }
+    }
 }

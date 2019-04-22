@@ -60,7 +60,7 @@ Describe "Network" {
         }
     }
 
-    Context "Runninng VM should be protected by NSG" {
+    Context "Runninng NIC should be protected by NSG" {
         $usedNics = Get-AzNetworkInterface | Where-Object { $_.VirtualMachine -ne $null }
         $usedNics | ForEach-Object {
             $usedNic = $_

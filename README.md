@@ -29,4 +29,4 @@ PowerShell script to validate Azure environment.
 ### Disk 
 
 - Unused disk should be deleted
-- 
+- Disk should be more than Standard HDD
