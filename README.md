@@ -11,6 +11,8 @@ PowerShell script to validate Azure environment.
 - Login Azure scription which you want to validate.
 - ./Test-Azure.ps1
 
+if you add `TestAzure:skip` tags to a resourece, Test-Azure skips the resource.
+
 ## The points which are validated by this script
 
 ### Backup
