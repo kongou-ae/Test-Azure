@@ -1,7 +1,8 @@
 param (
     [switch]$network,
     [switch]$backup,
-    [switch]$disk
+    [switch]$disk,
+    [switch]$PassThru
 )
 
 $ErrorActionPreference = "stop"
@@ -84,3 +85,7 @@ $pass = ($resultList | Where-Object {$_.Result -eq "Passed"}).Count
 $fail = ($resultList | Where-Object {$_.Result -eq "Failed"}).Count
 $skip = ($resultList | Where-Object {$_.Result -eq "Skipped"}).Count
 Write-Output "Total:$total, Passed:$pass, Failed:$fail, Skipped:$skip"
+
+if ( $PassThru ){
+    return $resultList
+}
