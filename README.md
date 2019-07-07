@@ -27,6 +27,7 @@ if you add `TestAzure:skip` tags to a resourece, Test-Azure skips the resource.
 - Unused nic should be deleted
 - Unused public ip address should be deleted
 - Runninng VM should be protected by NSG
+- VPN Gateway should be more than basic
 
 ### Disk 
 
@@ -36,5 +37,4 @@ if you add `TestAzure:skip` tags to a resourece, Test-Azure skips the resource.
 ### Compute
 
 - Boot diag should be enabled
-- Use managed disk
-- 
+- Should use managed disk
