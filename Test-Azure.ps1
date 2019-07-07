@@ -2,7 +2,9 @@ param (
     [switch]$network,
     [switch]$backup,
     [switch]$disk,
-    [switch]$PassThru
+    [switch]$compute,
+    [switch]$PassThru,
+    [switch]$export
 )
 
 $ErrorActionPreference = "stop"
@@ -38,11 +40,13 @@ $resultList = New-Object System.Collections.ArrayList
 if ( `
     $network.IsPresent -eq $false -and `
     $disk.IsPresent -eq $false -and `
-    $backup.IsPresent -eq $false
+    $backup.IsPresent -eq $false -and `
+    $compute.IsPresent -eq $false
 ) {
     $network = $true
     $disk = $true
     $backup = $true
+    $compute = $true
 }
 
 if ( $backup ){
@@ -66,9 +70,8 @@ if ( $network ){
     showResult $result "Nic should be used"
     showResult $result "Public ip address should be used"
     showResult $result "Runninng NIC should be protected by NSG"
+    showResult $result "VPN Gateway should be more than basic"
 }
-
-
 
 if ( $disk ){
     Write-ColorOutput "Test Disk" "Green"
@@ -78,6 +81,21 @@ if ( $disk ){
     }
     showResult $result "Disk should be used"
     showResult $result "Disk should be more than Standard HDD"    
+}
+
+if ( $compute ){
+    Write-ColorOutput "Test compute" "Green"
+    $result = Invoke-Pester .\scenarios\compute.ps1 -PassThru -Show None
+    $result.TestResult | ForEach-Object {
+        $resultList.Add($_) | Out-Null
+    }
+    showResult $result "Boot diag should be enabled"
+    showResult $result "OS Disk Should be managed disk"
+}
+
+if ( $export ) {
+    $FileName = "Test-Azure_$(Get-Date -Format yyyyMMdd-hhmmss).html"
+    $resultList | Select-Object Describe, Context, Name, Result | ConvertTo-Json -Depth 100 | Out-File $FileName -Encoding utf8    
 }
 
 $total = $resultList.Count

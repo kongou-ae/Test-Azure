@@ -1,9 +1,10 @@
 Describe "Disk" {
     
-    Context "Disk should be used" {
-        $disks = Get-AzDisk
+    $script:disks = Get-AzDisk
 
-        $disks | ForEach-Object {
+    Context "Disk should be used" {
+
+        $script:disks | ForEach-Object {
             $disk = $_
             $asrDisk = $false
             $disk.Tags.Keys | ForEach-Object {
@@ -29,9 +30,8 @@ Describe "Disk" {
     }
 
     Context "Disk should be more than Standard HDD" {
-        $disks = Get-AzDisk
 
-        $disks | ForEach-Object {
+        $script:disks | ForEach-Object {
             $disk = $_
  
             if ($disk.Tags["TestAzure"] -eq "skip") {

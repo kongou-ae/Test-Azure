@@ -1,5 +1,7 @@
 Describe "Network" {
 
+    $Script:vpngw = Get-AzResource -ResourceType "Microsoft.Network/virtualNetworkGateways" -ExpandProperties
+
     Context "NSG Flow Logs should be enabled" {
     
         $watcheres = Get-AzNetworkWatcher
@@ -79,6 +81,23 @@ Describe "Network" {
                     }                    
                 }
             }
+        }
+    }
+
+    Context "VPN Gateway should be more than basic" {
+        $Script:vpngw | ForEach-Object {
+            $vpngw = $_
+
+            if ($vpngw.Tag -ne $null -and $pip.Tag["TestAzure"] -eq "skip") {
+                it "$($vpngw.Name)" -Skip {
+                    $vpngw.Properties.sku.tier | Should -Not -Be "Basic"
+                }
+            } else {
+                it "$($vpngw.Name)" {
+                    $vpngw.Properties.sku.tier | Should -Not -Be "Basic"
+                }
+            }
+
         }
     }
 

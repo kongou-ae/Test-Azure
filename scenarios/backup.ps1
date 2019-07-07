@@ -2,21 +2,21 @@ $ErrorActionPreference = "stop"
 
 Describe "Backup" {
 
+    $script:vaults = Get-AzRecoveryServicesVault
+    $script:vms = Get-azvm
+
     Context "VM backup should be enabled" {
     
         $backupedVms = New-Object System.Collections.ArrayList
 
-        $vaults = Get-AzRecoveryServicesVault
-        $vms = Get-azvm
-
-        $vaults | ForEach-Object {
+        $script:vaults | ForEach-Object {
             $items = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $_.ID -Status Registered
             $items | ForEach-Object {
                 $backupedVms.add($_) | Out-Null
             }
         }
        
-        $vms | ForEach-Object {
+        $script:vms | ForEach-Object {
             $vm = $_
 
             if ($vm.Tags["TestAzure"] -eq "skip") {            
@@ -35,10 +35,7 @@ Describe "Backup" {
     
         $backupedItems = New-Object System.Collections.ArrayList
 
-        $vaults = Get-AzRecoveryServicesVault
-        $vms = Get-azvm
-
-        $vaults | ForEach-Object {
+        $script:vaults | ForEach-Object {
             $vault = $_
             $containers = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $vault.ID -Status Registered
             if ($containers){
@@ -48,7 +45,7 @@ Describe "Backup" {
             }
         }
 
-        $vms | ForEach-Object {
+        $script:vms | ForEach-Object {
             $vm = $_
             $protectVmDaily = $false
             $backupedItems | Where-Object { $_.VirtualMachineId -eq $vm.Id } | ForEach-Object {
@@ -85,8 +82,7 @@ Describe "Backup" {
             "Accept" = "application/json"
         }
 
-        $vaults = Get-AzRecoveryServicesVault
-        $vaults | ForEach-Object {
+        $script:vaults | ForEach-Object {
             $container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureVM -VaultId $_.ID -Status Registered
             if ( $container ) {
                 $res = Invoke-RestMethod -Method GET -Uri "https://management.azure.com$($_.ID)/monitoringConfigurations/notificationConfiguration?api-version=2017-07-01-preview" -Headers $requestHeader -ContentType "application/json;charset=utf-8"

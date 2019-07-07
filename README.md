@@ -32,3 +32,9 @@ if you add `TestAzure:skip` tags to a resourece, Test-Azure skips the resource.
 
 - Unused disk should be deleted
 - Disk should be more than Standard HDD
+
+### Compute
+
+- Boot diag should be enabled
+- Use managed disk
+- 
