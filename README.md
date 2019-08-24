@@ -2,7 +2,7 @@
 
 PowerShell script to validate Azure environment.
 
-<img src="https://user-images.githubusercontent.com/3410186/56469912-b65f5700-647a-11e9-9681-99461e4f69d0.PNG" width="400px">
+<img src="media/image001.png" width="400px">
 
 ## Usage 
 
@@ -10,8 +10,6 @@ PowerShell script to validate Azure environment.
 - git clone https://github.com/kongou-ae/Test-Azure
 - Login Azure scription which you want to validate.
 - ./Test-Azure.ps1
-
-if you add `TestAzure:skip` tags to a resourece, Test-Azure skips the resource.
 
 ## The points which are validated by this script
 
