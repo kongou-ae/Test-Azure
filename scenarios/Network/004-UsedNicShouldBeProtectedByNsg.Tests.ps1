@@ -4,7 +4,7 @@ Describe "Network" {
 
     $usedNics = Get-AzNetworkInterface | Where-Object { $_.VirtualMachine -ne $null }
 
-    Context "Runninng NIC should be protected by NSG" {
+    Context "Used NIC should be protected by NSG" {
         $usedNics | ForEach-Object {
             $usedNic = $_
             $usedNic.VirtualMachine.id -match "resourceGroups/(.*)/providers/Microsoft.Compute/virtualMachines/(.*)?"
