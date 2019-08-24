@@ -6,11 +6,12 @@ PowerShell script to validate Azure environment.
 
 ## Usage 
 
-- Open PowerShell
-- git clone https://github.com/kongou-ae/Test-Azure
-- Login Azure scription which you want to validate.
-- ./Test-Azure.ps1 # Readable output
-- ./Test-Azure.ps1 -json # JSON
+1. Open PowerShell
+2. git clone https://github.com/kongou-ae/Test-Azure
+3. Login Azure scription which you want to validate.
+4. Validate your Azure
+   1. ./Test-Azure.ps1 # Readable output
+   2. ./Test-Azure.ps1 -json # JSON
 
 ## The points which are validated by this script
 
