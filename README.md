@@ -9,7 +9,8 @@ PowerShell script to validate Azure environment.
 - Open PowerShell
 - git clone https://github.com/kongou-ae/Test-Azure
 - Login Azure scription which you want to validate.
-- ./Test-Azure.ps1
+- ./Test-Azure.ps1 # Readable output
+- ./Test-Azure.ps1 -json # JSON
 
 ## The points which are validated by this script
 
@@ -26,6 +27,7 @@ PowerShell script to validate Azure environment.
 - Unused public ip address should be deleted
 - Runninng VM should be protected by NSG
 - VPN Gateway should be more than basic
+- NSG Should has all deny rule in the last row
 
 ### Disk 
 
@@ -35,4 +37,4 @@ PowerShell script to validate Azure environment.
 ### Compute
 
 - Boot diag should be enabled
-- Should use managed disk
+- OS Disk Should be managed disk
