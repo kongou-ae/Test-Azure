@@ -14,7 +14,7 @@ PowerShell script to validate Azure environment.
 
 ## The points which are validated by this script
 
-### Backup
+### Recovery Service Vault
 
 - VM backup should be enabled
 - Latest backup should be within 24 hours
