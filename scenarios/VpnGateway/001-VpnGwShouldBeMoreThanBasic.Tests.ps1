@@ -1,6 +1,6 @@
 $ErrorActionPreference = "stop"
 
-Describe "Network" {
+Describe "VpnGateway" {
 
     $vpngw = Get-AzResource -ResourceType "Microsoft.Network/virtualNetworkGateways" -ExpandProperties
 

@@ -1,6 +1,6 @@
 $ErrorActionPreference = "stop"
 
-Describe "Network" {
+Describe "Compute" {
 
     $usedNics = Get-AzNetworkInterface | Where-Object { $_.VirtualMachine -ne $null }
 

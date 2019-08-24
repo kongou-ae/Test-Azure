@@ -1,6 +1,6 @@
 $ErrorActionPreference = "stop"
 
-Describe "Network" {
+Describe "NetworkSecurityGroup" {
 
     $watcheres = Get-AzNetworkWatcher
     $nsgs = Get-AzNetworkSecurityGroup
