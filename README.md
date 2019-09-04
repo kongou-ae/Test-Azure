@@ -19,7 +19,8 @@ PowerShell script to validate Azure environment.
 
 - Boot diag should be enabled
 - OS Disk Should be managed disk
-- USed NIC should be protected by NSG
+- Used NIC should be protected by NSG
+- Virtual Machine should not be stopped
 
 ### Disk 
 
