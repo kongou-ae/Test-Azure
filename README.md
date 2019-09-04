@@ -51,6 +51,7 @@ PowerShell script to validate Azure environment.
 ### VPN Gateway
 
 - VPN Gateway should be more than basic
+- Diagnostics settings of VPN gateway should be enabled
 
 
 
