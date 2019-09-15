@@ -47,6 +47,7 @@ PowerShell script to validate Azure environment.
 - VM backup should be enabled
 - Latest backup should be within 24 hours
 - Backup alert for VM backup should be configured
+- Recovery Service Vault should be GRS
 
 ### VPN Gateway
 
