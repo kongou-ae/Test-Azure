@@ -49,6 +49,12 @@ PowerShell script to validate Azure environment.
 - Backup alert for VM backup should be configured
 - Recovery Service Vault should be GRS
 
+### Subscription
+
+- The alert about service issue shoud be configured
+- The alert about planned maintenance shoud be configured
+- The alert about health advisors should be configured
+
 ### VPN Gateway
 
 - VPN Gateway should be more than basic
