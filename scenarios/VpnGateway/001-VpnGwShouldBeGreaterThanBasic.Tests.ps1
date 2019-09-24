@@ -4,7 +4,7 @@ Describe "VpnGateway" {
 
     $vpngw = Get-AzResource -ResourceType "Microsoft.Network/virtualNetworkGateways" -ExpandProperties
 
-    Context "VPN Gateway should be more than basic" {
+    Context "VPN Gateway should be greater than basic" {
         $vpngw | ForEach-Object {
             $vpngw = $_
 
