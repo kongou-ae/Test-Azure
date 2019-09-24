@@ -15,6 +15,11 @@ PowerShell script to validate Azure environment.
 
 ## The points which are validated by this script
 
+### Application Gateway
+
+- Application Gateway should be v2
+- Minimum instance should be greater equal two
+
 ### Compute
 
 - Boot diag should be enabled
@@ -57,7 +62,7 @@ PowerShell script to validate Azure environment.
 
 ### VPN Gateway
 
-- VPN Gateway should be more than basic
+- VPN Gateway should be greater than basic
 - Diagnostics settings of VPN gateway should be enabled
 
 
