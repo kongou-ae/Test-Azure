@@ -20,6 +20,11 @@ PowerShell script to validate Azure environment.
 - Application Gateway should be v2
 - Minimum instance should be greater equal two
 
+### AppService
+
+- App Service Plan should be greater equal Basic
+- Sku for production should have grater equal two instances
+
 ### Compute
 
 - Boot diag should be enabled
@@ -30,7 +35,7 @@ PowerShell script to validate Azure environment.
 ### Disk 
 
 - Unused disk should be deleted
-- Disk should be more than Standard HDD
+- Disk should be greater equal Standard SSD
 
 ### Load Balancer
 
@@ -45,7 +50,7 @@ PowerShell script to validate Azure environment.
 ### Network Security Group
 
 - NSG Flow Logs should be enabled
-- NSG Should has all deny rule in the last row
+- NSG should has all deny rule in the last row
 
 ### Recovery Service Vault
 

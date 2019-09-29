@@ -4,7 +4,7 @@ Describe "ApplicationGateway" {
 
     $appgws = Get-AzApplicationGateway
 
-    Context "Minimum instance should be greater than two" {
+    Context "Minimum instance should be greater equal two" {
 
         $appgws | ForEach-Object {
             $flag = $false
