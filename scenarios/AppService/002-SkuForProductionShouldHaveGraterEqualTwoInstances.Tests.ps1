@@ -4,10 +4,9 @@ Describe "AppService" {
 
     $AppsPlans = Get-AzAppServiceplan
 
-    Context "Sku for production should have grater equal two instances" {
+    Context "Sku for production should have greater equal two instances" {
 
         $AppsPlans | ForEach-Object {
-            $flag = $true
             $AppsPlan = $_
 
             if ( $AppsPlan.Sku.Tier -eq "Shared" -or $AppsPlan.Sku.Tier -eq "Free" -or $AppsPlan.Sku.Tier -eq "Dynamic"){
