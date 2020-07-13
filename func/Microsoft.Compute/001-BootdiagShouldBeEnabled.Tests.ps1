@@ -1,8 +1,6 @@
-$ErrorActionPreference = "stop"
+Describe "Microsoft.Compute" {
 
-Describe "Compute" {
-
-    $vms = Get-AzVm
+    $vms = $global:vms | ConvertFrom-Json -Depth 100
     $TestCases = New-Object System.Collections.ArrayList
 
     $vms | ForEach-Object {

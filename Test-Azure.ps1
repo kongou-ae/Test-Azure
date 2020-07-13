@@ -7,6 +7,16 @@ param (
     [switch]$export
 )
 
+Function Out-Log
+{
+    param(
+    [string]$message,
+    [string]$Color = 'White'
+    )
+
+    Write-Host "$message" -ForegroundColor $Color
+}
+
 $ErrorActionPreference = "stop"
 
 $usedModules = @(
@@ -31,26 +41,36 @@ $usedModules | ForEach-Object {
     }
 }
 
-Function Out-Log
-{
-    param(
-    [string]$message,
-    [string]$Color = 'White'
-    )
+#Install-Module -Name Pester -MinimumVersion 5.0.2 -Force -AllowClobber -Scope CurrentUser
+#Import-Module -Name Pester -MinimumVersion 5.0.2 -Scope Local -Force
 
-    Write-Host "$message" -ForegroundColor $Color
+$global:vms = Get-AzVm | Convertto-json -Depth 100
+$global:disks = Get-AzDisk | Convertto-json -Depth 100
+$global:nsgs = Get-AzNetworkSecurityGroup | Convertto-json -Depth 100
+
+$networkWatchers =  Get-AzNetworkWatcher
+$global:nsgFlowLogsStatus = New-Object System.Collections.ArrayList
+$networkWatchers | ForEach-Object {
+    $nsgFlowLog = Get-AzNetworkWatcherFlowLog -NetworkWatcher $_
+
+    $nsgFlowLog | ForEach-Object {
+        $global:nsgFlowLogsStatus.Add($_) | Out-Null
+    }
 }
+$global:nsgFlowLogsStatus = $global:nsgFlowLogsStatus | ConvertTo-Json -Depth 100
 
-# Pester の結果を取得
-$result = Invoke-Pester -path "scenarios/*.ps1"
 
-# Pester の結果から必要な部分だけを抽出
-$TestResult = $result.TestResult | Select-Object Describe, Context, Name, Result
+$result = Invoke-Pester -path "$PSScriptRoot\func\" -PassThru -Show None
+
+$TestResult = $result.Tests | Select-Object `
+    @{Label="Describe"; Expression={$_.Path[0]}}, `
+    @{Label="Context"; Expression={$_.Path[1]}}, `
+    ExpandedName, Result
 
 # ToDo: ファイルに書き出す処理を足す
 #$result | ConvertTo-Json 
 
-if ($TestResult -ne $null){
+if ($null -ne $TestResult){
     if( $json -eq $true ){
         $TestResult | ConvertTo-Json 
     } else {
@@ -75,7 +95,7 @@ if ($TestResult -ne $null){
                 # 全件からカテゴリとテスト項目に該当するものを抽出してループ
                 $TestResult | Where-Object { $_.Describe -eq $describe -and $_.Context -eq $context } | ForEach-Object {
                     $a = $_.Result
-                    $b = $_.Name
+                    $b = $_.ExpandedName
                     switch ($a) {
                         "Passed" {
                             Out-Log "  $($a) $($b)" "Green"

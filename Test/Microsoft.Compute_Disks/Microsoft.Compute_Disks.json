@@ -1,0 +1,95 @@
+[
+  {
+    "ResourceGroupName": "MANAKANA",
+    "ManagedBy": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx--c5bd3103e127/resourceGroups/manakana/providers/Microsoft.Compute/virtualMachines/ml-wu2c09083361eabe",
+    "ManagedByExtended": [],
+    "Sku": {
+      "Name": "Standard_LRS",
+      "Tier": "Standard"
+    },
+    "Zones": null,
+    "TimeCreated": "2020-01-31T14:09:36.0860479Z",
+    "OsType": "Linux",
+    "HyperVGeneration": "V1",
+    "CreationData": {
+      "CreateOption": "FromImage",
+      "StorageAccountId": null,
+      "ImageReference": {
+        "Id": "/Subscriptions/xxxxxxxx-xxxx-xxxx-xxxx--c5bd3103e127/Providers/Microsoft.Compute/Locations/westus2/Publishers/microsoft-dsvm/ArtifactTypes/VMImage/Offers/aml-workstation/Skus/ubuntu/Versions/20.01.08",
+        "Lun": null
+      },
+      "GalleryImageReference": null,
+      "SourceUri": null,
+      "SourceResourceId": null,
+      "SourceUniqueId": null,
+      "UploadSizeBytes": null
+    },
+    "DiskSizeGB": 64,
+    "DiskSizeBytes": 68719476736,
+    "UniqueId": "99a349e8-3182-4a4d-9351-5ca772098aac",
+    "EncryptionSettingsCollection": null,
+    "ProvisioningState": "Succeeded",
+    "DiskIOPSReadWrite": 500,
+    "DiskMBpsReadWrite": 60,
+    "DiskIOPSReadOnly": null,
+    "DiskMBpsReadOnly": null,
+    "DiskState": "Reserved",
+    "Encryption": {
+      "DiskEncryptionSetId": null,
+      "Type": "EncryptionAtRestWithPlatformKey"
+    },
+    "MaxShares": null,
+    "ShareInfo": [],
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx--c5bd3103e127/resourceGroups/MANAKANA/providers/Microsoft.Compute/disks/ml-wu2c09083361eabe_osDisk",
+    "Name": "ml-wu2c09083361eabe_osDisk",
+    "Type": "Microsoft.Compute/disks",
+    "Location": "westus2",
+    "Tags": {}
+  },
+  {
+    "ResourceGroupName": "JEGATE",
+    "ManagedBy": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx--c5bd3103e127/resourceGroups/jegate/providers/Microsoft.Compute/virtualMachines/gamehost",
+    "ManagedByExtended": [],
+    "Sku": {
+      "Name": "StandardSSD_LRS",
+      "Tier": "Standard"
+    },
+    "Zones": null,
+    "TimeCreated": "2020-02-23T01:54:09.5499687Z",
+    "OsType": "Windows",
+    "HyperVGeneration": "V1",
+    "CreationData": {
+      "CreateOption": "Restore",
+      "StorageAccountId": null,
+      "ImageReference": null,
+      "GalleryImageReference": null,
+      "SourceUri": null,
+      "SourceResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx--c5bd3103e127/resourceGroups/azsbackup1/providers/Microsoft.Compute/restorePointCollections/AzureBackup_gamehost_3832633651890266120/restorePoints/AzureBackup_20200222_083115/disks/gamehost_OsDisk_1_060f21c5f7f34926bf022898c216e981?id=2d0ce73b-2093-4b64-9b00-c83c76959b72",
+      "SourceUniqueId": null,
+      "UploadSizeBytes": null
+    },
+    "DiskSizeGB": 127,
+    "DiskSizeBytes": 136367308800,
+    "UniqueId": "4fbb0272-cc7d-45a3-a160-867ad2f086ca",
+    "EncryptionSettingsCollection": null,
+    "ProvisioningState": "Succeeded",
+    "DiskIOPSReadWrite": 500,
+    "DiskMBpsReadWrite": 60,
+    "DiskIOPSReadOnly": null,
+    "DiskMBpsReadOnly": null,
+    "DiskState": "Reserved",
+    "Encryption": {
+      "DiskEncryptionSetId": null,
+      "Type": "EncryptionAtRestWithPlatformKey"
+    },
+    "MaxShares": null,
+    "ShareInfo": [],
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx--c5bd3103e127/resourceGroups/JEGATE/providers/Microsoft.Compute/disks/gamehost-osdisk-20200223-015408",
+    "Name": "gamehost-osdisk-20200223-015408",
+    "Type": "Microsoft.Compute/disks",
+    "Location": "japaneast",
+    "Tags": {
+      "RSVaultBackup": "7c504430-5a53-428b-995d-81da67789fe0"
+    }
+  }
+]
