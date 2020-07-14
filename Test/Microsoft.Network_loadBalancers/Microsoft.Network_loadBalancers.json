@@ -1,0 +1,62 @@
+[
+  {
+    "ProvisioningState": "Succeeded",
+    "Sku": {
+      "Name": "Basic"
+    },
+    "FrontendIpConfigurations": [],
+    "BackendAddressPools": [],
+    "LoadBalancingRules": [],
+    "Probes": [],
+    "InboundNatRules": [],
+    "InboundNatPools": [],
+    "OutboundRules": [],
+    "ResourceGroupName": "lbtest",
+    "Location": "japaneast",
+    "ResourceGuid": "11d94b73-bf0d-4666-b20c-3ff8b31380e0",
+    "Type": "Microsoft.Network/loadBalancers",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "basiclb",
+    "Etag": "W/\"eb500ea4-8432-4eb9-a2b6-d3e6d29e70df\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/lbtest/providers/Microsoft.Network/loadBalancers/basiclb",
+    "SkuText": "{\r\n  \"Name\": \"Basic\"\r\n}",
+    "FrontendIpConfigurationsText": "[]",
+    "BackendAddressPoolsText": "[]",
+    "LoadBalancingRulesText": "[]",
+    "ProbesText": "[]",
+    "InboundNatRulesText": "[]",
+    "InboundNatPoolsText": "[]",
+    "OutboundRulesText": "[]"
+  },
+  {
+    "ProvisioningState": "Succeeded",
+    "Sku": {
+      "Name": "Standard"
+    },
+    "FrontendIpConfigurations": [],
+    "BackendAddressPools": [],
+    "LoadBalancingRules": [],
+    "Probes": [],
+    "InboundNatRules": [],
+    "InboundNatPools": [],
+    "OutboundRules": [],
+    "ResourceGroupName": "lbtest",
+    "Location": "japaneast",
+    "ResourceGuid": "821e78d2-67b4-4961-8f78-d45c73e8289f",
+    "Type": "Microsoft.Network/loadBalancers",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "stdlb",
+    "Etag": "W/\"c716ed50-397c-4346-894a-8518f0ee6541\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/lbtest/providers/Microsoft.Network/loadBalancers/stdlb",
+    "SkuText": "{\r\n  \"Name\": \"Standard\"\r\n}",
+    "FrontendIpConfigurationsText": "[]",
+    "BackendAddressPoolsText": "[]",
+    "LoadBalancingRulesText": "[]",
+    "ProbesText": "[]",
+    "InboundNatRulesText": "[]",
+    "InboundNatPoolsText": "[]",
+    "OutboundRulesText": "[]"
+  }
+]

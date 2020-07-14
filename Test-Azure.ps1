@@ -59,6 +59,7 @@ $networkWatchers | ForEach-Object {
 }
 $global:nsgFlowLogsStatus = $global:nsgFlowLogsStatus | ConvertTo-Json -Depth 100
 
+$global:lbs = Get-AzLoadBalancer | Convertto-json -Depth 100
 
 $result = Invoke-Pester -path "$PSScriptRoot\func\" -PassThru -Show None
 
