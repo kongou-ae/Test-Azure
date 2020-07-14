@@ -24,6 +24,11 @@ PowerShell script to validate your Azure environment.
 
 - Disk should be greater equal Standard SSD
 
+### Microsoft.Network/loadbalancers
+
+- LB should be Standard SKU
+- Standard LB should be zone redundant
+
 ### Microsoft.Network/networkSecurityGroups
 
 - NSG Flow Logs should be enabled
