@@ -1,0 +1,310 @@
+[
+  {
+    "IpConfigurations": [
+      {
+        "PrivateIpAddress": null,
+        "PrivateIpAllocationMethod": "Dynamic",
+        "Subnet": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/aaa/subnets/GatewaySubnet"
+        },
+        "PublicIpAddress": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/aaa"
+        },
+        "Name": "default",
+        "Etag": "W/\"21b9fef6-696d-4d5c-89f5-2d527aad459f\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/basicvpngw/ipConfigurations/default"
+      }
+    ],
+    "GatewayType": "Vpn",
+    "VpnType": "RouteBased",
+    "EnableBgp": false,
+    "EnablePrivateIpAddress": false,
+    "ActiveActive": false,
+    "GatewayDefaultSite": null,
+    "ProvisioningState": "Succeeded",
+    "Sku": {
+      "Capacity": 2,
+      "Name": "Basic",
+      "Tier": "Basic"
+    },
+    "VpnClientConfiguration": {
+      "VpnClientProtocols": [
+        "SSTP"
+      ],
+      "RadiusServerAddress": null,
+      "RadiusServerSecret": null,
+      "AadTenant": null,
+      "AadIssuer": null,
+      "AadAudience": null,
+      "VpnClientAddressPool": null,
+      "VpnClientRootCertificates": [],
+      "VpnClientRevokedCertificates": [],
+      "VpnClientIpsecPolicies": [],
+      "RadiusServers": []
+    },
+    "BgpSettings": {
+      "Asn": 65515,
+      "BgpPeeringAddress": "10.2.1.254",
+      "PeerWeight": 0,
+      "BgpPeeringAddresses": [
+        {
+          "IpconfigurationId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/basicvpngw/ipConfigurations/default",
+          "DefaultBgpIpAddresses": [
+            "10.2.1.254"
+          ],
+          "CustomBgpIpAddresses": [],
+          "TunnelIpAddresses": [
+            "52.149.212.216"
+          ],
+          "Name": null,
+          "Etag": null,
+          "Id": null
+        }
+      ]
+    },
+    "CustomRoutes": null,
+    "VpnGatewayGeneration": "Generation1",
+    "ResourceGroupName": "testvnet",
+    "Location": "eastus",
+    "ResourceGuid": "3b7ba43f-57a5-421e-b3aa-64e0418f92ab",
+    "Type": "Microsoft.Network/virtualNetworkGateways",
+    "Tag": {},
+    "TagsTable": null,
+    "Name": "basicvpngw",
+    "Etag": "W/\"21b9fef6-696d-4d5c-89f5-2d527aad459f\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/basicvpngw",
+    "IpConfigurationsText": "[\r\n  {\r\n    \"PrivateIpAllocationMethod\": \"Dynamic\",\r\n    \"Subnet\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/aaa/subnets/GatewaySubnet\"\r\n    },\r\n    \"PublicIpAddress\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/aaa\"\r\n    },\r\n    \"Name\": \"default\",\r\n    \"Etag\": \"W/\\\"21b9fef6-696d-4d5c-89f5-2d527aad459f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/basicvpngw/ipConfigurations/default\"\r\n  }\r\n]",
+    "GatewayDefaultSiteText": "null",
+    "SkuText": "{\r\n  \"Capacity\": 2,\r\n  \"Name\": \"Basic\",\r\n  \"Tier\": \"Basic\"\r\n}",
+    "VpnClientConfigurationText": "{\r\n  \"VpnClientProtocols\": [\r\n    \"SSTP\"\r\n  ],\r\n  \"VpnClientRootCertificates\": [],\r\n  \"VpnClientRevokedCertificates\": [],\r\n  \"VpnClientIpsecPolicies\": [],\r\n  \"RadiusServers\": []\r\n}",
+    "BgpSettingsText": "{\r\n  \"Asn\": 65515,\r\n  \"BgpPeeringAddress\": \"10.2.1.254\",\r\n  \"PeerWeight\": 0,\r\n  \"BgpPeeringAddresses\": [\r\n    {\r\n      \"IpconfigurationId\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/basicvpngw/ipConfigurations/default\",\r\n      \"DefaultBgpIpAddresses\": [\r\n        \"10.2.1.254\"\r\n      ],\r\n      \"CustomBgpIpAddresses\": [],\r\n      \"TunnelIpAddresses\": [\r\n        \"52.149.212.216\"\r\n      ]\r\n    }\r\n  ]\r\n}",
+    "CustomRoutesText": "null"
+  },
+  {
+    "IpConfigurations": [
+      {
+        "PrivateIpAddress": null,
+        "PrivateIpAllocationMethod": "Dynamic",
+        "Subnet": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/bbb/subnets/GatewaySubnet"
+        },
+        "PublicIpAddress": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/bbb"
+        },
+        "Name": "default",
+        "Etag": "W/\"d7c1fdbd-9225-4f4c-a2be-d15c9ed6db61\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonepinnedvpngw/ipConfigurations/default"
+      }
+    ],
+    "GatewayType": "Vpn",
+    "VpnType": "RouteBased",
+    "EnableBgp": false,
+    "EnablePrivateIpAddress": false,
+    "ActiveActive": false,
+    "GatewayDefaultSite": null,
+    "ProvisioningState": "Succeeded",
+    "Sku": {
+      "Capacity": 2,
+      "Name": "VpnGw1AZ",
+      "Tier": "VpnGw1AZ"
+    },
+    "VpnClientConfiguration": {
+      "VpnClientProtocols": [
+        "OpenVPN",
+        "IkeV2"
+      ],
+      "RadiusServerAddress": null,
+      "RadiusServerSecret": null,
+      "AadTenant": null,
+      "AadIssuer": null,
+      "AadAudience": null,
+      "VpnClientAddressPool": null,
+      "VpnClientRootCertificates": [],
+      "VpnClientRevokedCertificates": [],
+      "VpnClientIpsecPolicies": [],
+      "RadiusServers": []
+    },
+    "BgpSettings": {
+      "Asn": 65515,
+      "BgpPeeringAddress": "10.3.1.254",
+      "PeerWeight": 0,
+      "BgpPeeringAddresses": [
+        {
+          "IpconfigurationId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonepinnedvpngw/ipConfigurations/default",
+          "DefaultBgpIpAddresses": [
+            "10.3.1.254"
+          ],
+          "CustomBgpIpAddresses": [],
+          "TunnelIpAddresses": [
+            "20.51.224.116"
+          ],
+          "Name": null,
+          "Etag": null,
+          "Id": null
+        }
+      ]
+    },
+    "CustomRoutes": null,
+    "VpnGatewayGeneration": "Generation1",
+    "ResourceGroupName": "testvnet",
+    "Location": "eastus",
+    "ResourceGuid": "9b602b78-e2b1-4682-8cf6-371b00e5e03c",
+    "Type": "Microsoft.Network/virtualNetworkGateways",
+    "Tag": {},
+    "TagsTable": null,
+    "Name": "zonepinnedvpngw",
+    "Etag": "W/\"d7c1fdbd-9225-4f4c-a2be-d15c9ed6db61\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonepinnedvpngw",
+    "IpConfigurationsText": "[\r\n  {\r\n    \"PrivateIpAllocationMethod\": \"Dynamic\",\r\n    \"Subnet\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/bbb/subnets/GatewaySubnet\"\r\n    },\r\n    \"PublicIpAddress\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/bbb\"\r\n    },\r\n    \"Name\": \"default\",\r\n    \"Etag\": \"W/\\\"d7c1fdbd-9225-4f4c-a2be-d15c9ed6db61\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonepinnedvpngw/ipConfigurations/default\"\r\n  }\r\n]",
+    "GatewayDefaultSiteText": "null",
+    "SkuText": "{\r\n  \"Capacity\": 2,\r\n  \"Name\": \"VpnGw1AZ\",\r\n  \"Tier\": \"VpnGw1AZ\"\r\n}",
+    "VpnClientConfigurationText": "{\r\n  \"VpnClientProtocols\": [\r\n    \"OpenVPN\",\r\n    \"IkeV2\"\r\n  ],\r\n  \"VpnClientRootCertificates\": [],\r\n  \"VpnClientRevokedCertificates\": [],\r\n  \"VpnClientIpsecPolicies\": [],\r\n  \"RadiusServers\": []\r\n}",
+    "BgpSettingsText": "{\r\n  \"Asn\": 65515,\r\n  \"BgpPeeringAddress\": \"10.3.1.254\",\r\n  \"PeerWeight\": 0,\r\n  \"BgpPeeringAddresses\": [\r\n    {\r\n      \"IpconfigurationId\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonepinnedvpngw/ipConfigurations/default\",\r\n      \"DefaultBgpIpAddresses\": [\r\n        \"10.3.1.254\"\r\n      ],\r\n      \"CustomBgpIpAddresses\": [],\r\n      \"TunnelIpAddresses\": [\r\n        \"20.51.224.116\"\r\n      ]\r\n    }\r\n  ]\r\n}",
+    "CustomRoutesText": "null"
+  },
+  {
+    "IpConfigurations": [
+      {
+        "PrivateIpAddress": null,
+        "PrivateIpAllocationMethod": "Dynamic",
+        "Subnet": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/testvnet/subnets/GatewaySubnet"
+        },
+        "PublicIpAddress": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/pip01"
+        },
+        "Name": "default",
+        "Etag": "W/\"e7dd5d73-b52f-489d-9e2f-fc21c43a28e8\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/ergw/ipConfigurations/default"
+      }
+    ],
+    "GatewayType": "ExpressRoute",
+    "VpnType": "PolicyBased",
+    "EnableBgp": false,
+    "EnablePrivateIpAddress": false,
+    "ActiveActive": false,
+    "GatewayDefaultSite": null,
+    "ProvisioningState": "Succeeded",
+    "Sku": {
+      "Capacity": 2,
+      "Name": "ErGw1AZ",
+      "Tier": "ErGw1AZ"
+    },
+    "VpnClientConfiguration": {
+      "VpnClientProtocols": [
+        "OpenVPN",
+        "IkeV2"
+      ],
+      "RadiusServerAddress": null,
+      "RadiusServerSecret": null,
+      "AadTenant": null,
+      "AadIssuer": null,
+      "AadAudience": null,
+      "VpnClientAddressPool": null,
+      "VpnClientRootCertificates": [],
+      "VpnClientRevokedCertificates": [],
+      "VpnClientIpsecPolicies": [],
+      "RadiusServers": []
+    },
+    "BgpSettings": null,
+    "CustomRoutes": null,
+    "VpnGatewayGeneration": "None",
+    "ResourceGroupName": "testvnet",
+    "Location": "japaneast",
+    "ResourceGuid": "2be56d49-0be2-4dcb-9abf-f63e66d7792b",
+    "Type": "Microsoft.Network/virtualNetworkGateways",
+    "Tag": {},
+    "TagsTable": null,
+    "Name": "ergw",
+    "Etag": "W/\"e7dd5d73-b52f-489d-9e2f-fc21c43a28e8\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/ergw",
+    "IpConfigurationsText": "[\r\n  {\r\n    \"PrivateIpAllocationMethod\": \"Dynamic\",\r\n    \"Subnet\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/testvnet/subnets/GatewaySubnet\"\r\n    },\r\n    \"PublicIpAddress\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/pip01\"\r\n    },\r\n    \"Name\": \"default\",\r\n    \"Etag\": \"W/\\\"e7dd5d73-b52f-489d-9e2f-fc21c43a28e8\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/ergw/ipConfigurations/default\"\r\n  }\r\n]",
+    "GatewayDefaultSiteText": "null",
+    "SkuText": "{\r\n  \"Capacity\": 2,\r\n  \"Name\": \"ErGw1AZ\",\r\n  \"Tier\": \"ErGw1AZ\"\r\n}",
+    "VpnClientConfigurationText": "{\r\n  \"VpnClientProtocols\": [\r\n    \"OpenVPN\",\r\n    \"IkeV2\"\r\n  ],\r\n  \"VpnClientRootCertificates\": [],\r\n  \"VpnClientRevokedCertificates\": [],\r\n  \"VpnClientIpsecPolicies\": [],\r\n  \"RadiusServers\": []\r\n}",
+    "BgpSettingsText": "null",
+    "CustomRoutesText": "null"
+  },
+  {
+    "IpConfigurations": [
+      {
+        "PrivateIpAddress": null,
+        "PrivateIpAllocationMethod": "Dynamic",
+        "Subnet": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/testvnet/subnets/GatewaySubnet"
+        },
+        "PublicIpAddress": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/pip"
+        },
+        "Name": "default",
+        "Etag": "W/\"aafc47e6-5cd5-4179-a1c0-c85dcc9bf164\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonegw/ipConfigurations/default"
+      }
+    ],
+    "GatewayType": "Vpn",
+    "VpnType": "RouteBased",
+    "EnableBgp": true,
+    "EnablePrivateIpAddress": false,
+    "ActiveActive": false,
+    "GatewayDefaultSite": null,
+    "ProvisioningState": "Succeeded",
+    "Sku": {
+      "Capacity": 2,
+      "Name": "VpnGw1AZ",
+      "Tier": "VpnGw1AZ"
+    },
+    "VpnClientConfiguration": {
+      "VpnClientProtocols": [
+        "OpenVPN",
+        "IkeV2"
+      ],
+      "RadiusServerAddress": null,
+      "RadiusServerSecret": null,
+      "AadTenant": null,
+      "AadIssuer": null,
+      "AadAudience": null,
+      "VpnClientAddressPool": null,
+      "VpnClientRootCertificates": [],
+      "VpnClientRevokedCertificates": [],
+      "VpnClientIpsecPolicies": [],
+      "RadiusServers": []
+    },
+    "BgpSettings": {
+      "Asn": 65515,
+      "BgpPeeringAddress": "10.1.1.254",
+      "PeerWeight": 0,
+      "BgpPeeringAddresses": [
+        {
+          "IpconfigurationId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonegw/ipConfigurations/default",
+          "DefaultBgpIpAddresses": [
+            "10.1.1.254"
+          ],
+          "CustomBgpIpAddresses": [],
+          "TunnelIpAddresses": [
+            "20.48.8.196"
+          ],
+          "Name": null,
+          "Etag": null,
+          "Id": null
+        }
+      ]
+    },
+    "CustomRoutes": null,
+    "VpnGatewayGeneration": "Generation1",
+    "ResourceGroupName": "testvnet",
+    "Location": "japaneast",
+    "ResourceGuid": "ab5a4a8b-39d3-4b96-a6dd-ae121b544721",
+    "Type": "Microsoft.Network/virtualNetworkGateways",
+    "Tag": {},
+    "TagsTable": null,
+    "Name": "zonegw",
+    "Etag": "W/\"aafc47e6-5cd5-4179-a1c0-c85dcc9bf164\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonegw",
+    "IpConfigurationsText": "[\r\n  {\r\n    \"PrivateIpAllocationMethod\": \"Dynamic\",\r\n    \"Subnet\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworks/testvnet/subnets/GatewaySubnet\"\r\n    },\r\n    \"PublicIpAddress\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/publicIPAddresses/pip\"\r\n    },\r\n    \"Name\": \"default\",\r\n    \"Etag\": \"W/\\\"aafc47e6-5cd5-4179-a1c0-c85dcc9bf164\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonegw/ipConfigurations/default\"\r\n  }\r\n]",
+    "GatewayDefaultSiteText": "null",
+    "SkuText": "{\r\n  \"Capacity\": 2,\r\n  \"Name\": \"VpnGw1AZ\",\r\n  \"Tier\": \"VpnGw1AZ\"\r\n}",
+    "VpnClientConfigurationText": "{\r\n  \"VpnClientProtocols\": [\r\n    \"OpenVPN\",\r\n    \"IkeV2\"\r\n  ],\r\n  \"VpnClientRootCertificates\": [],\r\n  \"VpnClientRevokedCertificates\": [],\r\n  \"VpnClientIpsecPolicies\": [],\r\n  \"RadiusServers\": []\r\n}",
+    "BgpSettingsText": "{\r\n  \"Asn\": 65515,\r\n  \"BgpPeeringAddress\": \"10.1.1.254\",\r\n  \"PeerWeight\": 0,\r\n  \"BgpPeeringAddresses\": [\r\n    {\r\n      \"IpconfigurationId\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/testvnet/providers/Microsoft.Network/virtualNetworkGateways/zonegw/ipConfigurations/default\",\r\n      \"DefaultBgpIpAddresses\": [\r\n        \"10.1.1.254\"\r\n      ],\r\n      \"CustomBgpIpAddresses\": [],\r\n      \"TunnelIpAddresses\": [\r\n        \"20.48.8.196\"\r\n      ]\r\n    }\r\n  ]\r\n}",
+    "CustomRoutesText": "null"
+  }
+]

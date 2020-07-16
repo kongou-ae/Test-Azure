@@ -50,6 +50,12 @@ $global:disks = get-content "Test\Microsoft.Compute_Disks\Microsoft.Compute_Disk
 $global:nsgs = get-content "Test\Microsoft.Network_networkSecurityGroups\Microsoft.Network_networkSecurityGroups.json"
 $global:nsgFlowLogsStatus = Get-Content "Test\Microsoft.Network_networkSecurityGroups\Microsoft.Network_networkWatchersStatus.json"
 
+$global:lbs = Get-Content "Test\Microsoft.Network_loadBalancers\Microsoft.Network_loadBalancers.json"
+
+$global:pips = Get-Content "Test\Microsoft.Network_publicipaddresses\Microsoft.Network_publicipaddresses.json"
+
+$global:vpnGateways = Get-Content "Test\Microsoft.Network_virtualNetworkGateways\Microsoft.Network_virtualNetworkGateways.json"
+
 $global:result = Invoke-Pester -path "func\" -PassThru -Show None
 
 # Execute the result of Test-Azure 

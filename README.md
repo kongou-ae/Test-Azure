@@ -32,3 +32,11 @@ PowerShell script to validate your Azure environment.
 ### Microsoft.Network/networkSecurityGroups
 
 - NSG Flow Logs should be enabled
+
+### Microsoft.Network/publicipaddresses
+
+- Public IP Address should be used
+
+### Microsoft.Network/virtualNetworkGateways
+
+- VPN Gateway should be greater than basic SKU

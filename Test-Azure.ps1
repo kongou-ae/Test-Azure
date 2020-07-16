@@ -17,6 +17,16 @@ Function Out-Log
     Write-Host "$message" -ForegroundColor $Color
 }
 
+function Convert-IndivisualResult {
+    param (
+        $result
+    )
+    return $result.Tests | Select-Object `
+    @{Label="Describe"; Expression={$_.Path[0]}}, `
+    @{Label="Context"; Expression={$_.Path[1]}}, `
+    ExpandedName, Result
+}
+
 $ErrorActionPreference = "stop"
 
 $usedModules = @(
@@ -44,8 +54,43 @@ $usedModules | ForEach-Object {
 #Install-Module -Name Pester -MinimumVersion 5.0.2 -Force -AllowClobber -Scope CurrentUser
 #Import-Module -Name Pester -MinimumVersion 5.0.2 -Scope Local -Force
 
+$TestResult = New-Object System.Collections.ArrayList
+
 $global:vms = Get-AzVm | Convertto-json -Depth 100
+
+##############################################################
+# Microsoft.Compute
+##############################################################
+
+if ($null -ne $global:vms){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Compute\001-BootdiagShouldBeEnabled.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+    
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Compute\002-OsDiskShouldBeManagedDisk.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
+
+##############################################################
+# Microsoft.Compute/Disks
+##############################################################
+
 $global:disks = Get-AzDisk | Convertto-json -Depth 100
+
+if ($null -ne $global:disks){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Compute_Disks\001-DiskShoudBeGreaterThanStandardSSD.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
+
+##############################################################
+# Microsoft.Network/networkSecurityGroups
+##############################################################
+
 $global:nsgs = Get-AzNetworkSecurityGroup | Convertto-json -Depth 100
 
 $networkWatchers =  Get-AzNetworkWatcher
@@ -59,17 +104,62 @@ $networkWatchers | ForEach-Object {
 }
 $global:nsgFlowLogsStatus = $global:nsgFlowLogsStatus | ConvertTo-Json -Depth 100
 
+if ($null -ne $global:nsgs){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_networkSecurityGroups\001-NsgFlowLogsShouldBeEnabled.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_networkSecurityGroups\002-NsgShouldHasAllDenyRuleInTheLastRow.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
+
+##############################################################
+# Microsoft.Network/loadBalancers
+##############################################################
+
 $global:lbs = Get-AzLoadBalancer | Convertto-json -Depth 100
+if ($null -ne $global:lbs){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_loadBalancers\001-LbSouldBeStandardSku.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
 
-$result = Invoke-Pester -path "$PSScriptRoot\func\" -PassThru -Show None
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_loadBalancers\002-StandardLbShouldBeZoneRedundant.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
 
-$TestResult = $result.Tests | Select-Object `
-    @{Label="Describe"; Expression={$_.Path[0]}}, `
-    @{Label="Context"; Expression={$_.Path[1]}}, `
-    ExpandedName, Result
+##############################################################
+# Microsoft.Network/publicipaddresses
+##############################################################
+
+$global:pip = Get-AzPublicIpAddress | ConvertTo-Json -Depth 100
+if ($null -ne $global:pip){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_publicipaddresses\001-PipShoudBeUsed.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
+
+
+##############################################################
+# Microsoft.Network/virtualNetworkGateways
+##############################################################
+
+$global:vpnGateways = Get-AzResourceGroup | Get-AzVirtualNetworkGateway | ConvertTo-json -Depth 100
+if ($null -ne $global:vpnGateways){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_virtualNetworkGateways\001-VpnGwShouldBeGreaterThanBasic.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
 
 # ToDo: ファイルに書き出す処理を足す
-#$result | ConvertTo-Json 
+#$TestResult | ConvertTo-Json -Depth 100 | out-file "test-result.json"
 
 if ($null -ne $TestResult){
     if( $json -eq $true ){

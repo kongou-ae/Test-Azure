@@ -24,7 +24,7 @@
         "DestinationApplicationSecurityGroups": [],
         "Name": "100",
         "Etag": "W/\"2ee7f239-bb4c-49c5-b0fb-81c2ebf98ce1\"",
-        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e12/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion/securityRules/100"
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion/securityRules/100"
       },
       {
         "Description": null,
@@ -417,7 +417,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "100",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/100"
       },
       {
@@ -442,7 +442,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "200",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/200"
       },
       {
@@ -467,7 +467,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "100_in",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/100_in"
       },
       {
@@ -480,10 +480,10 @@
           "*"
         ],
         "SourceAddressPrefix": [
-          "Internet"
+          "*"
         ],
         "DestinationAddressPrefix": [
-          "VirtualNetwork"
+          "*"
         ],
         "Access": "Deny",
         "Priority": 110,
@@ -492,7 +492,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "110_in",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/110_in"
       },
       {
@@ -518,7 +518,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "210",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/210"
       },
       {
@@ -531,7 +531,7 @@
           "*"
         ],
         "SourceAddressPrefix": [
-          "VirtualNetwork"
+          "*"
         ],
         "DestinationAddressPrefix": [
           "*"
@@ -543,7 +543,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "400",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/400"
       },
       {
@@ -568,7 +568,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "105_in",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/105_in"
       },
       {
@@ -593,7 +593,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "Port_8080",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/Port_8080"
       }
     ],
@@ -620,7 +620,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowVnetInBound",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowVnetInBound"
       },
       {
@@ -645,7 +645,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowAzureLoadBalancerInBound",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowAzureLoadBalancerInBound"
       },
       {
@@ -670,7 +670,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "DenyAllInBound",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/DenyAllInBound"
       },
       {
@@ -695,7 +695,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowVnetOutBound",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowVnetOutBound"
       },
       {
@@ -720,7 +720,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowInternetOutBound",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowInternetOutBound"
       },
       {
@@ -745,7 +745,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "DenyAllOutBound",
-        "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+        "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/DenyAllOutBound"
       }
     ],
@@ -759,10 +759,10 @@
     "Tag": null,
     "TagsTable": null,
     "Name": "bastion2",
-    "Etag": "W/\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\"",
+    "Etag": "W/\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\"",
     "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2",
-    "SecurityRulesText": "[\r\n  {\r\n    \"Name\": \"100\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/100\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"GatewayManager\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 100,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"200\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/200\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"AzureCloud\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 200,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"100_in\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/100_in\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 100,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"110_in\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/110_in\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"Internet\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 110,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"210\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/210\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"3389\",\r\n      \"22\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 210,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"400\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/400\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 400,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"105_in\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/105_in\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"AzureLoadBalancer\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 105,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"Port_8080\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/Port_8080\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"GatewayManager\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 106,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
-    "DefaultSecurityRulesText": "[\r\n  {\r\n    \"Name\": \"AllowVnetInBound\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowVnetInBound\",\r\n    \"Description\": \"Allow inbound traffic from all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowAzureLoadBalancerInBound\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowAzureLoadBalancerInBound\",\r\n    \"Description\": \"Allow inbound traffic from azure load balancer\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"AzureLoadBalancer\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllInBound\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/DenyAllInBound\",\r\n    \"Description\": \"Deny all inbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowVnetOutBound\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowVnetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowInternetOutBound\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowInternetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to Internet\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"Internet\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllOutBound\",\r\n    \"Etag\": \"W/\\\"96c5d502-e5d2-4aa8-b32e-bdd38b5d379f\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/DenyAllOutBound\",\r\n    \"Description\": \"Deny all outbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
+    "SecurityRulesText": "[\r\n  {\r\n    \"Name\": \"100\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/100\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"GatewayManager\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 100,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"200\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/200\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"AzureCloud\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 200,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"100_in\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/100_in\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 100,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"110_in\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/110_in\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 110,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"210\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/210\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"3389\",\r\n      \"22\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 210,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"400\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/400\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 400,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"105_in\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/105_in\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"AzureLoadBalancer\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 105,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"Port_8080\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/securityRules/Port_8080\",\r\n    \"Protocol\": \"TCP\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"443\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"GatewayManager\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 106,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
+    "DefaultSecurityRulesText": "[\r\n  {\r\n    \"Name\": \"AllowVnetInBound\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowVnetInBound\",\r\n    \"Description\": \"Allow inbound traffic from all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowAzureLoadBalancerInBound\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowAzureLoadBalancerInBound\",\r\n    \"Description\": \"Allow inbound traffic from azure load balancer\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"AzureLoadBalancer\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllInBound\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/DenyAllInBound\",\r\n    \"Description\": \"Deny all inbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowVnetOutBound\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowVnetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowInternetOutBound\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/AllowInternetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to Internet\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"Internet\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllOutBound\",\r\n    \"Etag\": \"W/\\\"33cd4004-c0de-4d24-8eb7-4141f7bc76e7\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion2/defaultSecurityRules/DenyAllOutBound\",\r\n    \"Description\": \"Deny all outbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
     "NetworkInterfacesText": "[]",
     "SubnetsText": "[]"
   },
@@ -790,7 +790,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowAllInbound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/securityRules/AllowAllInbound"
       },
       {
@@ -815,7 +815,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowAllOutbound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/securityRules/AllowAllOutbound"
       }
     ],
@@ -842,7 +842,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowVnetInBound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowVnetInBound"
       },
       {
@@ -867,7 +867,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowAzureLoadBalancerInBound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowAzureLoadBalancerInBound"
       },
       {
@@ -892,7 +892,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "DenyAllInBound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/DenyAllInBound"
       },
       {
@@ -917,7 +917,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowVnetOutBound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowVnetOutBound"
       },
       {
@@ -942,7 +942,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "AllowInternetOutBound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowInternetOutBound"
       },
       {
@@ -967,7 +967,7 @@
         "SourceApplicationSecurityGroups": [],
         "DestinationApplicationSecurityGroups": [],
         "Name": "DenyAllOutBound",
-        "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+        "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
         "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/DenyAllOutBound"
       }
     ],
@@ -983,10 +983,10 @@
     },
     "TagsTable": "\r\nName      Value                               \r\n========  ====================================\r\nprovider  6EB3B02F-50E5-4A3E-8CB8-2E129258317D\r\n",
     "Name": "fg-hcduddgb4lp24-NSG",
-    "Etag": "W/\"53c99cc6-b086-472f-b69f-8051ec405e7e\"",
+    "Etag": "W/\"787ee17f-322f-49a4-960d-004fd41b11d9\"",
     "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG",
-    "SecurityRulesText": "[\r\n  {\r\n    \"Name\": \"AllowAllInbound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/securityRules/AllowAllInbound\",\r\n    \"Description\": \"Allow all in\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 100,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowAllOutbound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/securityRules/AllowAllOutbound\",\r\n    \"Description\": \"Allow all out\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 105,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
-    "DefaultSecurityRulesText": "[\r\n  {\r\n    \"Name\": \"AllowVnetInBound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowVnetInBound\",\r\n    \"Description\": \"Allow inbound traffic from all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowAzureLoadBalancerInBound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowAzureLoadBalancerInBound\",\r\n    \"Description\": \"Allow inbound traffic from azure load balancer\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"AzureLoadBalancer\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllInBound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/DenyAllInBound\",\r\n    \"Description\": \"Deny all inbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowVnetOutBound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowVnetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowInternetOutBound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowInternetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to Internet\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"Internet\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllOutBound\",\r\n    \"Etag\": \"W/\\\"53c99cc6-b086-472f-b69f-8051ec405e7e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/DenyAllOutBound\",\r\n    \"Description\": \"Deny all outbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
+    "SecurityRulesText": "[\r\n  {\r\n    \"Name\": \"AllowAllInbound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/securityRules/AllowAllInbound\",\r\n    \"Description\": \"Allow all in\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 100,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowAllOutbound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/securityRules/AllowAllOutbound\",\r\n    \"Description\": \"Allow all out\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 105,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
+    "DefaultSecurityRulesText": "[\r\n  {\r\n    \"Name\": \"AllowVnetInBound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowVnetInBound\",\r\n    \"Description\": \"Allow inbound traffic from all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowAzureLoadBalancerInBound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowAzureLoadBalancerInBound\",\r\n    \"Description\": \"Allow inbound traffic from azure load balancer\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"AzureLoadBalancer\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllInBound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/DenyAllInBound\",\r\n    \"Description\": \"Deny all inbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Inbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowVnetOutBound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowVnetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to all VMs in VNET\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"VirtualNetwork\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65000,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"AllowInternetOutBound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/AllowInternetOutBound\",\r\n    \"Description\": \"Allow outbound traffic from all VMs to Internet\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"Internet\"\r\n    ],\r\n    \"Access\": \"Allow\",\r\n    \"Priority\": 65001,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  },\r\n  {\r\n    \"Name\": \"DenyAllOutBound\",\r\n    \"Etag\": \"W/\\\"787ee17f-322f-49a4-960d-004fd41b11d9\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG/defaultSecurityRules/DenyAllOutBound\",\r\n    \"Description\": \"Deny all outbound traffic\",\r\n    \"Protocol\": \"*\",\r\n    \"SourcePortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationPortRange\": [\r\n      \"*\"\r\n    ],\r\n    \"SourceAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"DestinationAddressPrefix\": [\r\n      \"*\"\r\n    ],\r\n    \"Access\": \"Deny\",\r\n    \"Priority\": 65500,\r\n    \"Direction\": \"Outbound\",\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"SourceApplicationSecurityGroups\": [],\r\n    \"DestinationApplicationSecurityGroups\": []\r\n  }\r\n]",
     "NetworkInterfacesText": "[]",
     "SubnetsText": "[]"
   },
