@@ -1,0 +1,677 @@
+[
+  {
+    "AddressSpace": {
+      "AddressPrefixes": [
+        "192.168.212.0/24"
+      ]
+    },
+    "DhcpOptions": null,
+    "Subnets": [
+      {
+        "AddressPrefix": [
+          "192.168.212.0/24"
+        ],
+        "IpConfigurations": [
+          {
+            "PrivateIpAddress": null,
+            "PrivateIpAllocationMethod": null,
+            "Subnet": null,
+            "PublicIpAddress": null,
+            "ProvisioningState": null,
+            "Name": null,
+            "Etag": null,
+            "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/jegate/providers/Microsoft.Network/networkInterfaces/gamehost-nic-c345fd6fa28246b78d3b5cc10f97f10e/ipConfigurations/1c1d71a69f634377a6c398ebd31a09cc"
+          }
+        ],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "default",
+        "Etag": "W/\"77e35825-44d3-41fc-b3ad-56e7aa8318b0\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/dev/providers/Microsoft.Network/virtualNetworks/dev-vnet/subnets/default"
+      }
+    ],
+    "BgpCommunities": null,
+    "VirtualNetworkPeerings": [],
+    "ProvisioningState": "Succeeded",
+    "EnableDdosProtection": false,
+    "DdosProtectionPlan": null,
+    "IpAllocations": [],
+    "ResourceGroupName": "dev",
+    "Location": "japaneast",
+    "ResourceGuid": "258faf6b-de2f-4685-a66b-2ed7d8da4d57",
+    "Type": "Microsoft.Network/virtualNetworks",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "dev-vnet",
+    "Etag": "W/\"77e35825-44d3-41fc-b3ad-56e7aa8318b0\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/dev/providers/Microsoft.Network/virtualNetworks/dev-vnet",
+    "AddressSpaceText": "{\r\n  \"AddressPrefixes\": [\r\n    \"192.168.212.0/24\"\r\n  ]\r\n}",
+    "DhcpOptionsText": "null",
+    "SubnetsText": "[\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"default\",\r\n    \"Etag\": \"W/\\\"77e35825-44d3-41fc-b3ad-56e7aa8318b0\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/dev/providers/Microsoft.Network/virtualNetworks/dev-vnet/subnets/default\",\r\n    \"AddressPrefix\": [\r\n      \"192.168.212.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [\r\n      {\r\n        \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/jegate/providers/Microsoft.Network/networkInterfaces/gamehost-nic-c345fd6fa28246b78d3b5cc10f97f10e/ipConfigurations/1c1d71a69f634377a6c398ebd31a09cc\"\r\n      }\r\n    ],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  }\r\n]",
+    "BgpCommunitiesText": "null",
+    "VirtualNetworkPeeringsText": "[]",
+    "EnableDdosProtectionText": "false",
+    "DdosProtectionPlanText": "null",
+    "IpAllocationsText": "[]"
+  },
+  {
+    "AddressSpace": {
+      "AddressPrefixes": [
+        "10.0.0.0/16",
+        "192.168.210.0/24"
+      ]
+    },
+    "DhcpOptions": null,
+    "Subnets": [
+      {
+        "AddressPrefix": [
+          "10.0.1.0/24"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "EntrySubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/EntrySubnet"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.3.0/28"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "HASyncSubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/HASyncSubnet"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.4.0/28"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "ManagementSubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/ManagementSubnet"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.5.0/24"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": {
+          "Routes": [],
+          "Subnets": [],
+          "ProvisioningState": null,
+          "DisableBgpRoutePropagation": false,
+          "ResourceGroupName": null,
+          "Location": null,
+          "ResourceGuid": null,
+          "Type": null,
+          "Tag": null,
+          "TagsTable": null,
+          "Name": null,
+          "Etag": null,
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/routeTables/FGTDefaultAPRouteTable"
+        },
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "ProtectedSubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/ProtectedSubnet"
+      },
+      {
+        "AddressPrefix": [
+          "192.168.210.0/27"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "GatewaySubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/GatewaySubnet"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.0.0/24"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "AzureFirewallSubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/AzureFirewallSubnet"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.6.0/24"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": {
+          "SecurityRules": [],
+          "DefaultSecurityRules": [],
+          "NetworkInterfaces": [],
+          "Subnets": [],
+          "ProvisioningState": null,
+          "ResourceGroupName": null,
+          "Location": null,
+          "ResourceGuid": null,
+          "Type": null,
+          "Tag": null,
+          "TagsTable": null,
+          "Name": null,
+          "Etag": null,
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion"
+        },
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "AzureBastionSubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/AzureBastionSubnet"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.8.0/27"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [
+          {
+            "LinkedResourceType": "Microsoft.Web/serverfarms",
+            "Link": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/airinterop2019v2/providers/Microsoft.Web/serverfarms/airinterop2019",
+            "ProvisioningState": "Succeeded",
+            "Name": "AppServiceLink",
+            "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+            "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservice02/serviceAssociationLinks/AppServiceLink"
+          }
+        ],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [
+          {
+            "ProvisioningState": "Succeeded",
+            "ServiceName": "Microsoft.Web/serverfarms",
+            "Actions": [
+              "Microsoft.Network/virtualNetworks/subnets/action"
+            ],
+            "Name": "delegation",
+            "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+            "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservice02/delegations/delegation"
+          }
+        ],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "appservice02",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservice02"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.8.32/27"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Disabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "appservicePlink",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservicePlink"
+      },
+      {
+        "AddressPrefix": [
+          "192.168.210.32/28"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "nat",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/nat"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.8.64/27"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Disabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "monitorplink",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/monitorplink"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.7.0/24"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Disabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "iaas",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/iaas"
+      },
+      {
+        "AddressPrefix": [
+          "10.0.2.0/24"
+        ],
+        "IpConfigurations": [
+          {
+            "PrivateIpAddress": null,
+            "PrivateIpAllocationMethod": null,
+            "Subnet": null,
+            "PublicIpAddress": null,
+            "ProvisioningState": null,
+            "Name": null,
+            "Etag": null,
+            "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkInterfaces/nic1/ipConfigurations/ipconfig1"
+          }
+        ],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [
+          {
+            "ProvisioningState": "Succeeded",
+            "Service": "Microsoft.Storage",
+            "Locations": [
+              "japaneast",
+              "japanwest"
+            ]
+          }
+        ],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "TransitSubnet",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/TransitSubnet"
+      }
+    ],
+    "BgpCommunities": null,
+    "VirtualNetworkPeerings": [
+      {
+        "ResourceGroupName": null,
+        "VirtualNetworkName": null,
+        "PeeringState": "Disconnected",
+        "AllowVirtualNetworkAccess": true,
+        "AllowForwardedTraffic": false,
+        "AllowGatewayTransit": true,
+        "UseRemoteGateways": false,
+        "RemoteVirtualNetwork": {
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/asdk/providers/Microsoft.Network/virtualNetworks/vnet-westus"
+        },
+        "RemoteGateways": null,
+        "RemoteVirtualNetworkAddressSpace": {
+          "AddressPrefixes": [
+            "172.31.0.0/16"
+          ]
+        },
+        "ProvisioningState": "Succeeded",
+        "Name": "peer",
+        "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/virtualNetworkPeerings/peer"
+      }
+    ],
+    "ProvisioningState": "Succeeded",
+    "EnableDdosProtection": false,
+    "DdosProtectionPlan": null,
+    "IpAllocations": [],
+    "ResourceGroupName": "fgnew",
+    "Location": "japaneast",
+    "ResourceGuid": "0a5f5752-d5fb-4c0c-9359-dbe161c8b6c4",
+    "Type": "Microsoft.Network/virtualNetworks",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "fgnew",
+    "Etag": "W/\"36469f1d-89e6-44fd-b218-aac4e9993a9e\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew",
+    "AddressSpaceText": "{\r\n  \"AddressPrefixes\": [\r\n    \"10.0.0.0/16\",\r\n    \"192.168.210.0/24\"\r\n  ]\r\n}",
+    "DhcpOptionsText": "null",
+    "SubnetsText": "[\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"EntrySubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/EntrySubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.1.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"HASyncSubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/HASyncSubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.3.0/28\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"ManagementSubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/ManagementSubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.4.0/28\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"ProtectedSubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/ProtectedSubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.5.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"RouteTable\": {\r\n      \"DisableBgpRoutePropagation\": false,\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/routeTables/FGTDefaultAPRouteTable\"\r\n    },\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"GatewaySubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/GatewaySubnet\",\r\n    \"AddressPrefix\": [\r\n      \"192.168.210.0/27\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"AzureFirewallSubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/AzureFirewallSubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.0.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"AzureBastionSubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/AzureBastionSubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.6.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"NetworkSecurityGroup\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion\"\r\n    },\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"ServiceName\": \"Microsoft.Web/serverfarms\",\r\n        \"Actions\": [\r\n          \"Microsoft.Network/virtualNetworks/subnets/action\"\r\n        ],\r\n        \"Name\": \"delegation\",\r\n        \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n        \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservice02/delegations/delegation\"\r\n      }\r\n    ],\r\n    \"Name\": \"appservice02\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservice02\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.8.0/27\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [\r\n      {\r\n        \"Name\": \"AppServiceLink\",\r\n        \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n        \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservice02/serviceAssociationLinks/AppServiceLink\",\r\n        \"LinkedResourceType\": \"Microsoft.Web/serverfarms\",\r\n        \"Link\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/airinterop2019v2/providers/Microsoft.Web/serverfarms/airinterop2019\",\r\n        \"ProvisioningState\": \"Succeeded\"\r\n      }\r\n    ],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"appservicePlink\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/appservicePlink\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.8.32/27\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Disabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"nat\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/nat\",\r\n    \"AddressPrefix\": [\r\n      \"192.168.210.32/28\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"monitorplink\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/monitorplink\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.8.64/27\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Disabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"iaas\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/iaas\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.7.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Disabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  },\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"TransitSubnet\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/subnets/TransitSubnet\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.2.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [\r\n      {\r\n        \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkInterfaces/nic1/ipConfigurations/ipconfig1\"\r\n      }\r\n    ],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [\r\n      {\r\n        \"ProvisioningState\": \"Succeeded\",\r\n        \"Service\": \"Microsoft.Storage\",\r\n        \"Locations\": [\r\n          \"japaneast\",\r\n          \"japanwest\"\r\n        ]\r\n      }\r\n    ],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  }\r\n]",
+    "BgpCommunitiesText": "null",
+    "VirtualNetworkPeeringsText": "[\r\n  {\r\n    \"Name\": \"peer\",\r\n    \"Etag\": \"W/\\\"36469f1d-89e6-44fd-b218-aac4e9993a9e\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/virtualNetworks/fgnew/virtualNetworkPeerings/peer\",\r\n    \"PeeringState\": \"Disconnected\",\r\n    \"AllowVirtualNetworkAccess\": true,\r\n    \"AllowForwardedTraffic\": false,\r\n    \"AllowGatewayTransit\": true,\r\n    \"UseRemoteGateways\": false,\r\n    \"RemoteVirtualNetwork\": {\r\n      \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/asdk/providers/Microsoft.Network/virtualNetworks/vnet-westus\"\r\n    },\r\n    \"RemoteVirtualNetworkAddressSpace\": {\r\n      \"AddressPrefixes\": [\r\n        \"172.31.0.0/16\"\r\n      ]\r\n    },\r\n    \"ProvisioningState\": \"Succeeded\"\r\n  }\r\n]",
+    "EnableDdosProtectionText": "false",
+    "DdosProtectionPlanText": "null",
+    "IpAllocationsText": "[]"
+  },
+  {
+    "AddressSpace": {
+      "AddressPrefixes": [
+        "10.0.0.0/16"
+      ]
+    },
+    "DhcpOptions": {
+      "DnsServers": [
+        "8.8.8.8"
+      ]
+    },
+    "Subnets": [
+      {
+        "AddressPrefix": [
+          "10.0.0.0/24"
+        ],
+        "IpConfigurations": [],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Disabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "subnet01",
+        "Etag": "W/\"a0bccf9b-7ad6-4a5f-bed0-05293bc66e05\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/whatif/providers/Microsoft.Network/virtualNetworks/Vnet0503/subnets/subnet01"
+      }
+    ],
+    "BgpCommunities": null,
+    "VirtualNetworkPeerings": [],
+    "ProvisioningState": "Succeeded",
+    "EnableDdosProtection": false,
+    "DdosProtectionPlan": null,
+    "IpAllocations": [],
+    "ResourceGroupName": "whatif",
+    "Location": "japaneast",
+    "ResourceGuid": "2a726a2d-7e2e-4bcb-87c8-5345e2bf8473",
+    "Type": "Microsoft.Network/virtualNetworks",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "Vnet0503",
+    "Etag": "W/\"a0bccf9b-7ad6-4a5f-bed0-05293bc66e05\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/whatif/providers/Microsoft.Network/virtualNetworks/Vnet0503",
+    "AddressSpaceText": "{\r\n  \"AddressPrefixes\": [\r\n    \"10.0.0.0/16\"\r\n  ]\r\n}",
+    "DhcpOptionsText": "{\r\n  \"DnsServers\": [\r\n    \"8.8.8.8\"\r\n  ]\r\n}",
+    "SubnetsText": "[\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"subnet01\",\r\n    \"Etag\": \"W/\\\"a0bccf9b-7ad6-4a5f-bed0-05293bc66e05\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/whatif/providers/Microsoft.Network/virtualNetworks/Vnet0503/subnets/subnet01\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.0.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Disabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  }\r\n]",
+    "BgpCommunitiesText": "null",
+    "VirtualNetworkPeeringsText": "[]",
+    "EnableDdosProtectionText": "false",
+    "DdosProtectionPlanText": "null",
+    "IpAllocationsText": "[]"
+  },
+  {
+    "AddressSpace": {
+      "AddressPrefixes": [
+        "10.0.0.0/24"
+      ]
+    },
+    "DhcpOptions": null,
+    "Subnets": [
+      {
+        "AddressPrefix": [
+          "10.0.0.0/24"
+        ],
+        "IpConfigurations": [
+          {
+            "PrivateIpAddress": null,
+            "PrivateIpAllocationMethod": null,
+            "Subnet": null,
+            "PublicIpAddress": null,
+            "ProvisioningState": null,
+            "Name": null,
+            "Etag": null,
+            "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/manakana/providers/Microsoft.Network/networkInterfaces/ml-wu2c09083361eabe/ipConfigurations/ipconfig1"
+          }
+        ],
+        "ServiceAssociationLinks": [],
+        "ResourceNavigationLinks": [],
+        "NetworkSecurityGroup": null,
+        "RouteTable": null,
+        "NatGateway": null,
+        "ServiceEndpoints": [],
+        "ServiceEndpointPolicies": [],
+        "Delegations": [],
+        "PrivateEndpoints": [],
+        "ProvisioningState": "Succeeded",
+        "PrivateEndpointNetworkPolicies": "Enabled",
+        "PrivateLinkServiceNetworkPolicies": "Enabled",
+        "IpAllocations": [],
+        "Name": "default",
+        "Etag": "W/\"bda25008-c933-4cc4-a6cc-28cf0a0e0428\"",
+        "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/manakana/providers/Microsoft.Network/virtualNetworks/ml-wu2c09083361eabe/subnets/default"
+      }
+    ],
+    "BgpCommunities": null,
+    "VirtualNetworkPeerings": [],
+    "ProvisioningState": "Succeeded",
+    "EnableDdosProtection": false,
+    "DdosProtectionPlan": null,
+    "IpAllocations": [],
+    "ResourceGroupName": "manakana",
+    "Location": "westus2",
+    "ResourceGuid": "b5d3bdbb-bde6-4cfd-9ba4-20f5e73f390a",
+    "Type": "Microsoft.Network/virtualNetworks",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "ml-wu2c09083361eabe",
+    "Etag": "W/\"bda25008-c933-4cc4-a6cc-28cf0a0e0428\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/manakana/providers/Microsoft.Network/virtualNetworks/ml-wu2c09083361eabe",
+    "AddressSpaceText": "{\r\n  \"AddressPrefixes\": [\r\n    \"10.0.0.0/24\"\r\n  ]\r\n}",
+    "DhcpOptionsText": "null",
+    "SubnetsText": "[\r\n  {\r\n    \"Delegations\": [],\r\n    \"Name\": \"default\",\r\n    \"Etag\": \"W/\\\"bda25008-c933-4cc4-a6cc-28cf0a0e0428\\\"\",\r\n    \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/manakana/providers/Microsoft.Network/virtualNetworks/ml-wu2c09083361eabe/subnets/default\",\r\n    \"AddressPrefix\": [\r\n      \"10.0.0.0/24\"\r\n    ],\r\n    \"IpConfigurations\": [\r\n      {\r\n        \"Id\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/manakana/providers/Microsoft.Network/networkInterfaces/ml-wu2c09083361eabe/ipConfigurations/ipconfig1\"\r\n      }\r\n    ],\r\n    \"ServiceAssociationLinks\": [],\r\n    \"ResourceNavigationLinks\": [],\r\n    \"ServiceEndpoints\": [],\r\n    \"ServiceEndpointPolicies\": [],\r\n    \"PrivateEndpoints\": [],\r\n    \"ProvisioningState\": \"Succeeded\",\r\n    \"PrivateEndpointNetworkPolicies\": \"Enabled\",\r\n    \"PrivateLinkServiceNetworkPolicies\": \"Enabled\",\r\n    \"IpAllocations\": []\r\n  }\r\n]",
+    "BgpCommunitiesText": "null",
+    "VirtualNetworkPeeringsText": "[]",
+    "EnableDdosProtectionText": "false",
+    "DdosProtectionPlanText": "null",
+    "IpAllocationsText": "[]"
+  }
+]

@@ -40,3 +40,7 @@ PowerShell script to validate your Azure environment.
 ### Microsoft.Network/virtualNetworkGateways
 
 - VPN Gateway should be greater than basic SKU
+
+### Microsoft.Network/virtualNetworks
+
+- Gateway subnet should be /27

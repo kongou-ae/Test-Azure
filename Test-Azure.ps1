@@ -56,11 +56,12 @@ $usedModules | ForEach-Object {
 
 $TestResult = New-Object System.Collections.ArrayList
 
-$global:vms = Get-AzVm | Convertto-json -Depth 100
 
 ##############################################################
 # Microsoft.Compute
 ##############################################################
+
+$global:vms = Get-AzVm | Convertto-json -Depth 100
 
 if ($null -ne $global:vms){
     $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Compute\001-BootdiagShouldBeEnabled.Tests.ps1"
@@ -137,8 +138,9 @@ if ($null -ne $global:lbs){
 # Microsoft.Network/publicipaddresses
 ##############################################################
 
-$global:pip = Get-AzPublicIpAddress | ConvertTo-Json -Depth 100
-if ($null -ne $global:pip){
+$global:pips = Get-AzPublicIpAddress | ConvertTo-Json -Depth 100
+
+if ($null -ne $global:pips){
     $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_publicipaddresses\001-PipShoudBeUsed.Tests.ps1"
     (Convert-IndivisualResult $result) | ForEach-Object {
         $TestResult.Add($_) | Out-Null
@@ -157,6 +159,19 @@ if ($null -ne $global:vpnGateways){
         $TestResult.Add($_) | Out-Null
     }
 }
+
+##############################################################
+# Microsoft.Network/virtualNetworks
+##############################################################
+
+$global:vnets = Get-AzVirtualNetwork | ConvertTo-json -Depth 100
+if ($null -ne $global:vnets){
+    $result = Invoke-Pester -PassThru -Show None -path "func\Microsoft.Network_virtualNetworks\001-GatewaysubnetShouldBe27.Tests.ps1"
+    (Convert-IndivisualResult $result) | ForEach-Object {
+        $TestResult.Add($_) | Out-Null
+    }
+}
+
 
 # ToDo: ファイルに書き出す処理を足す
 #$TestResult | ConvertTo-Json -Depth 100 | out-file "test-result.json"

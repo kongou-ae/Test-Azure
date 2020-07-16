@@ -1,4 +1,4 @@
-Describe "Microsoft.Compute" {
+Describe "Microsoft.Compute/virtualMachines" {
 
     $result = $global:result.Tests | Where-Object { $_.Block.Name -eq "OS Disk Should be managed disk" }
     $TestCases = New-Object System.Collections.ArrayList

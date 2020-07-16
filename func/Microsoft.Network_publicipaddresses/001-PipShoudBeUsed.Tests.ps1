@@ -1,6 +1,6 @@
 $ErrorActionPreference = "stop"
 
-Describe "Microsoft.Network_publicipaddresses" {
+Describe "Microsoft.Network/publicipaddresses" {
 
     $pips = $global:pips | ConvertFrom-Json -Depth 100 
     $TestCases = New-Object System.Collections.ArrayList

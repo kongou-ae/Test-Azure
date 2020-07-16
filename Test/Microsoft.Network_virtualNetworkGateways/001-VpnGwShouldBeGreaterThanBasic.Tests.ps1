@@ -15,8 +15,6 @@ Describe "Microsoft.Network/virtualNetworkGateways" {
             $TestCases.Add($tmp) | Out-Null
         }
 
-        Write-host ( $TestCases | ConvertTo-Json )
-
         it "<Name>" -TestCases ($TestCases | Where-Object { $_.Name -eq "basicvpngw" }){
             Param($Name,$sku)
             $sku | Should -Be "Basic"

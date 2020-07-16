@@ -56,6 +56,9 @@ $global:pips = Get-Content "Test\Microsoft.Network_publicipaddresses\Microsoft.N
 
 $global:vpnGateways = Get-Content "Test\Microsoft.Network_virtualNetworkGateways\Microsoft.Network_virtualNetworkGateways.json"
 
+$global:vnets = Get-Content "Test\Microsoft.Network_virtualNetworks\Microsoft.Network_virtualNetworks.json"
+
+
 $global:result = Invoke-Pester -path "func\" -PassThru -Show None
 
 # Execute the result of Test-Azure 

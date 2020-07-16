@@ -1,4 +1,4 @@
-Describe "Microsoft.Compute" {
+Describe "Microsoft.Compute/virtualMachines" {
 
     $vms = $global:vms | ConvertFrom-Json -Depth 100
     $TestCases = New-Object System.Collections.ArrayList
