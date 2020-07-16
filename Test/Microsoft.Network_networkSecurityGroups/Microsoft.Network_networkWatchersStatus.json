@@ -1,0 +1,68 @@
+[
+  {
+    "ProvisioningState": "Succeeded",
+    "TargetResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/bastion",
+    "TargetResourceGuid": "18fa51a2-7966-4cf4-93c8-00bdb236250c",
+    "StorageId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Storage/storageAccounts/fgbootdiag",
+    "Enabled": true,
+    "RetentionPolicy": {
+      "Days": 10,
+      "Enabled": false
+    },
+    "Format": {
+      "Type": "JSON",
+      "Version": 2
+    },
+    "FlowAnalyticsConfiguration": {
+      "NetworkWatcherFlowAnalyticsConfiguration": {
+        "Enabled": true,
+        "WorkspaceId": "d9a8e9b3-7aa2-4318-996f-968c5fae7086",
+        "WorkspaceRegion": "eastus",
+        "WorkspaceResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourcegroups/demo/providers/microsoft.operationalinsights/workspaces/aimlessdemo",
+        "TrafficAnalyticsInterval": 10
+      }
+    },
+    "ResourceGroupName": null,
+    "Location": "japaneast",
+    "ResourceGuid": null,
+    "Type": "Microsoft.Network/networkWatchers/FlowLogs",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "Microsoft.Networkfgnewbastion",
+    "Etag": "W/\"92eaa9ee-5ca5-4f37-ab00-91600acc5ec4\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_japaneast/FlowLogs/Microsoft.Networkfgnewbastion",
+    "RetentionPolicyText": "{\r\n  \"Days\": 10,\r\n  \"Enabled\": false\r\n}",
+    "FormatText": "{\r\n  \"Type\": \"JSON\",\r\n  \"Version\": 2\r\n}",
+    "FlowAnalyticsConfigurationText": "{\r\n  \"networkWatcherFlowAnalyticsConfiguration\": {\r\n    \"enabled\": true,\r\n    \"workspaceId\": \"d9a8e9b3-7aa2-4318-996f-968c5fae7086\",\r\n    \"workspaceRegion\": \"eastus\",\r\n    \"workspaceResourceId\": \"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourcegroups/demo/providers/microsoft.operationalinsights/workspaces/aimlessdemo\",\r\n    \"trafficAnalyticsInterval\": 10\r\n  }\r\n}"
+  },
+  {
+    "ProvisioningState": "Succeeded",
+    "TargetResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/fgnew/providers/Microsoft.Network/networkSecurityGroups/fg-hcduddgb4lp24-NSG",
+    "TargetResourceGuid": "cdc6fa29-f639-4cf6-9ee5-8b3ad804f059",
+    "StorageId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/AzResourceProviderSnapshot/providers/Microsoft.Storage/storageAccounts/azresourceprovi9e06",
+    "Enabled": true,
+    "RetentionPolicy": {
+      "Days": 0,
+      "Enabled": false
+    },
+    "Format": {
+      "Type": "JSON",
+      "Version": 1
+    },
+    "FlowAnalyticsConfiguration": {
+      "NetworkWatcherFlowAnalyticsConfiguration": null
+    },
+    "ResourceGroupName": null,
+    "Location": "japaneast",
+    "ResourceGuid": null,
+    "Type": "Microsoft.Network/networkWatchers/FlowLogs",
+    "Tag": null,
+    "TagsTable": null,
+    "Name": "fg-hcduddgb4lp24-NSG-fgnew-flowlog",
+    "Etag": "W/\"92eaa9ee-5ca5-4f37-ab00-91600acc5ec4\"",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-c5bd3103e127/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_japaneast/FlowLogs/fg-hcduddgb4lp24-NSG-fgnew-flowlog",
+    "RetentionPolicyText": "{\r\n  \"Days\": 0,\r\n  \"Enabled\": false\r\n}",
+    "FormatText": "{\r\n  \"Type\": \"JSON\",\r\n  \"Version\": 1\r\n}",
+    "FlowAnalyticsConfigurationText": "{}"
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "ResourceGroupName": "JEGATE",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/JEGATE/providers/Microsoft.Compute/virtualMachines/gamehost",
+    "VmId": "37b329ad-13b7-4c7c-a9f5-09ff56da7b9b",
+    "Name": "gamehosttest",
+    "Type": "Microsoft.Compute/virtualMachines",
+    "Location": "japaneast",
+    "LicenseType": null,
+    "Tags": {},
+    "AvailabilitySetReference": null,
+    "DiagnosticsProfile": {
+      "BootDiagnostics": {
+        "Enabled": true,
+        "StorageUri": "https://fgbootdiag.blob.core.windows.net/"
+      }
+    },
+    "Extensions": [],
+    "HardwareProfile": {
+      "VmSize": "Standard_NV6_Promo"
+    },
+    "InstanceView": null,
+    "NetworkProfile": {
+      "NetworkInterfaces": [
+        {
+          "Primary": true,
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/jegate/providers/Microsoft.Network/networkInterfaces/gamehost-nic-c345fd6fa28246b78d3b5cc10f97f10e"
+        }
+      ]
+    },
+    "OSProfile": null,
+    "BillingProfile": null,
+    "Plan": null,
+    "ProvisioningState": "Succeeded",
+    "StorageProfile": {
+      "ImageReference": null,
+      "OsDisk": {
+        "OsType": "Windows",
+        "EncryptionSettings": null,
+        "Name": "gamehost-osdisk-20200223-015408",
+        "Vhd": null,
+        "Image": null,
+        "Caching": "ReadWrite",
+        "WriteAcceleratorEnabled": null,
+        "DiffDiskSettings": null,
+        "CreateOption": "Attach",
+        "DiskSizeGB": null,
+        "ManagedDisk": {
+          "StorageAccountType": null,
+          "DiskEncryptionSet": null,
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/jegate/providers/Microsoft.Compute/disks/gamehost-osdisk-20200223-015408"
+        }
+      },
+      "DataDisks": []
+    },
+    "DisplayHint": 0,
+    "Identity": null,
+    "Zones": [],
+    "FullyQualifiedDomainName": null,
+    "AdditionalCapabilities": null,
+    "ProximityPlacementGroup": null,
+    "Host": null,
+    "VirtualMachineScaleSet": null,
+    "EvictionPolicy": null,
+    "Priority": null,
+    "RequestId": "3183d5e6-3041-49e8-bc9b-cf8b38fc48fb",
+    "StatusCode": 200
+  },
+  {
+    "ResourceGroupName": "MANAKANA",
+    "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MANAKANA/providers/Microsoft.Compute/virtualMachines/ml-wu2c09083361eabe",
+    "VmId": "182ed4c1-040d-4349-8fd7-3e20d6eeec81",
+    "Name": "ml-wu2c09083361eabetest",
+    "Type": "Microsoft.Compute/virtualMachines",
+    "Location": "westus2",
+    "LicenseType": null,
+    "Tags": {},
+    "AvailabilitySetReference": null,
+    "DiagnosticsProfile": null,
+    "Extensions": [],
+    "HardwareProfile": {
+      "VmSize": "STANDARD_DS3_V2"
+    },
+    "InstanceView": null,
+    "NetworkProfile": {
+      "NetworkInterfaces": [
+        {
+          "Primary": null,
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/manakana/providers/Microsoft.Network/networkInterfaces/ml-wu2c09083361eabe"
+        }
+      ]
+    },
+    "OSProfile": {
+      "ComputerName": "ml-wu2c09083361eabe",
+      "AdminUsername": "azureuser",
+      "AdminPassword": null,
+      "CustomData": null,
+      "WindowsConfiguration": null,
+      "LinuxConfiguration": {
+        "DisablePasswordAuthentication": true,
+        "Ssh": {
+          "PublicKeys": [
+            {
+              "Path": "/home/azureuser/.ssh/authorized_keys",
+              "KeyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDn4A0H/JwXRUkgXw4DJFd8p5SqUKhvrLdI/KTZ1n7oMgYIpQTcXjnlOYxUVIM7xuR8PE27GyLINjjnAoiJZV2zMSXQqYTfSGfdyCoMjK9Mdbfe2F5rC8JZCBnplz4g2/rPtY2WecUgSqNmlYKD8pnYL3XAH88aCb2XHJPGJiWIaFqtX5kfzuEgREC7wUgfAbG8YGVlsPZEMRDm/UvhHTRgPTbiIwwHPUFz1T+1jrVziCitdmYSX0jftIckfF0dkBOH2yWqeOS0jvmSWC/Hy6/Et7u1MXRyAGn7cD7rMbV82LQIMEZo+XES3t6eetm6t/ARiN7mLPNBZc5oyjaEQqZj azureuser"
+            }
+          ]
+        },
+        "ProvisionVMAgent": null
+      },
+      "Secrets": [],
+      "AllowExtensionOperations": null,
+      "RequireGuestProvisionSignal": null
+    },
+    "BillingProfile": null,
+    "Plan": null,
+    "ProvisioningState": "Succeeded",
+    "StorageProfile": {
+      "ImageReference": {
+        "Publisher": "microsoft-dsvm",
+        "Offer": "aml-workstation",
+        "Sku": "ubuntu",
+        "Version": "20.01.08",
+        "ExactVersion": "20.01.08",
+        "Id": null
+      },
+      "OsDisk": {
+        "OsType": "Linux",
+        "EncryptionSettings": null,
+        "Name": "ml-wu2c09083361eabe_osDisk",
+        "Vhd": null,
+        "Image": null,
+        "Caching": "ReadWrite",
+        "WriteAcceleratorEnabled": null,
+        "DiffDiskSettings": null,
+        "CreateOption": "FromImage",
+        "DiskSizeGB": null,
+        "ManagedDisk": {
+          "StorageAccountType": null,
+          "DiskEncryptionSet": null,
+          "Id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MANAKANA/providers/Microsoft.Compute/disks/ml-wu2c09083361eabe_osDisk"
+        }
+      },
+      "DataDisks": []
+    },
+    "DisplayHint": 0,
+    "Identity": null,
+    "Zones": [],
+    "FullyQualifiedDomainName": null,
+    "AdditionalCapabilities": null,
+    "ProximityPlacementGroup": null,
+    "Host": null,
+    "VirtualMachineScaleSet": null,
+    "EvictionPolicy": null,
+    "Priority": null,
+    "RequestId": "3183d5e6-3041-49e8-bc9b-cf8b38fc48fb",
+    "StatusCode": 200
+  }
+]
